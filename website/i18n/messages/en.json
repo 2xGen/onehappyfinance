@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "home": "Home",
+    "guides": "Guides"
+  },
+  "hero": {
+    "title": "Your Trusted Guide to",
+    "mortgages": "Mortgages",
+    "insurance": "Insurance",
+    "finance": "Finance",
+    "and": "and",
+    "inAruba": "in Aruba",
+    "subtitle": "At OneHappyFinance, we simplify everything — from mortgage options to insurance and pension planning — so you can make confident, informed decisions.",
+    "cta": "Explore Our Guides"
+  },
+  "guides": {
+    "title": "Our Financial Guides",
+    "subtitle": "Clarity for your financial journey in Aruba.",
+    "searchPlaceholder": "Search guides...",
+    "readMore": "Read More",
+    "noResults": "No guides found matching your criteria. Try another search!",
+    "categories": {
+      "all": "All",
+      "mortgages": "Mortgages",
+      "insurance": "Insurance",
+      "financeRetirement": "Finance & Retirement"
+    },
+    "items": {
+      "costOfLiving": {
+        "title": "Cost of Living in Aruba (2025 Guide)",
+        "excerpt": "A complete guide to property ownership, legal processes, and financial considerations.",
+        "category": "Finance & Retirement"
+      },
+      "movingToAruba": {
+        "title": "Moving to Aruba: What to Know Before You Relocate",
+        "excerpt": "Our analysis on interest rates, lending policies, and what they mean for your home buying journey.",
+        "category": "Finance & Retirement"
+      },
+      "rentingVsBuying": {
+        "title": "Renting vs. Buying in Aruba",
+        "excerpt": "Everything you need to know about protecting your property investment in Aruba's climate.",
+        "category": "Mortgages"
+      },
+      "bestNeighborhoods": {
+        "title": "Best Neighborhoods to Buy a Home in Aruba",
+        "excerpt": "A side-by-side comparison of the top lenders on the island.",
+        "category": "Mortgages"
+      },
+      "mortgageMistakes": {
+        "title": "5 Common Mistakes When Applying for a Mortgage in Aruba",
+        "excerpt": "Understand the local pension system and how it affects expats.",
+        "category": "Mortgages"
+      },
+      "healthInsurance": {
+        "title": "Health Insurance for Expats in Aruba",
+        "excerpt": "Navigate the options for private and public health coverage.",
+        "category": "Insurance"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted source for financial clarity in Aruba.",
+    "disclaimer": "Information only – we are not a financial institution or mortgage provider. All content is for informational purposes and does not constitute financial advice.",
+    "copyright": "OneHappyFinance.com. All Rights Reserved."
+  },
+  "toast": {
+    "comingSoon": {
+      "title": "Coming Soon!",
+      "description": "Our detailed guides are being published. Check back soon for expert insights!"
+    }
+  },
+  "about": {
+    "title": "Built for Aruba's Financial Reality",
+    "paragraph1": "Aruba's economy runs on strong families, small businesses, and home ownership. But financial information can be complicated — banks and brokers often use confusing jargon.",
+    "paragraph2": "That's where OneHappyFinance comes in. We make financial topics",
+    "highlight": "simple, transparent, and local",
+    "paragraph2End": "— from mortgages to insurance, so you can make confident decisions.",
+    "cta": "Explore Our Guides"
+  },
+  "ourApproach": {
+    "title": "Your Clear Path to Financial Confidence",
+    "paragraph1": "We believe everyone deserves clear, unbiased financial guidance built on simplicity, transparency, and a deep understanding of Aruba's unique financial landscape.",
+    "paragraph2": "We cut through the jargon to provide you with actionable insights, easy-to-understand guides, and honest comparisons. Your peace of mind is our priority, ensuring you make choices that truly benefit your future on the island.",
+    "cta": "Explore Our Guides"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Us?",
+    "reasons": {
+      "focused": "100% focused on Aruba and the Caribbean",
+      "transparent": "Transparent, easy-to-read financial information",
+      "noPressure": "No sales pressure — just clarity",
+      "freeResources": "Free resources, guides, and local insights",
+      "helpingAll": "Helping both residents and foreigners navigate the system",
+      "upToDate": "Up-to-date with local market changes"
+    }
+  },
+  "featuredGuides": {
+    "title": "Featured Guides",
+    "subtitle": "Our latest articles to help you navigate Aruba's financial landscape.",
+    "readMore": "Read More",
+    "guides": {
+      "buyingHouse": {
+        "title": "Buying a House in Aruba as a Foreigner – What You Should Know",
+        "excerpt": "A complete guide to property ownership requirements, legal processes, and financial considerations.",
+        "category": "Property"
+      },
+      "mortgageRates": {
+        "title": "Mortgage Rates in Aruba: What's Changing in 2026?",
+        "excerpt": "Our analysis on interest rates, lending policies, and what they mean for your home buying journey.",
+        "category": "Mortgages"
+      },
+      "homeInsurance": {
+        "title": "The Complete Guide to Home Insurance in Aruba",
+        "excerpt": "Everything you need to know about protecting your property investment in Aruba's climate.",
+        "category": "Insurance"
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "nav": {
+    "home": "Home",
+    "guides": "Gidsen"
+  },
+  "hero": {
+    "title": "Uw Betrouwbare Gids voor",
+    "mortgages": "Hypotheken",
+    "insurance": "Verzekeringen",
+    "finance": "Financieel Advies",
+    "and": "en",
+    "inAruba": "in Aruba",
+    "subtitle": "Bij OneHappyFinance vereenvoudigen we alles — van hypotheekopties tot verzekeringen en pensioenplanning — zodat u weloverwogen en met vertrouwen beslissingen kunt nemen.",
+    "cta": "Verken Onze Gidsen"
+  },
+  "guides": {
+    "title": "Onze Financiële Gidsen",
+    "subtitle": "Helderheid voor uw financiële reis in Aruba.",
+    "searchPlaceholder": "Zoek gidsen...",
+    "readMore": "Lees Meer",
+    "noResults": "Geen gidsen gevonden die aan uw criteria voldoen. Probeer een andere zoekopdracht!",
+    "categories": {
+      "all": "Alles",
+      "mortgages": "Hypotheken",
+      "insurance": "Verzekeringen",
+      "financeRetirement": "Financiën & Pensioen"
+    },
+    "items": {
+      "costOfLiving": {
+        "title": "Levenskosten in Aruba (2025 Gids)",
+        "excerpt": "Een complete gids voor eigendomsrechten, juridische processen en financiële overwegingen.",
+        "category": "Financiën & Pensioen"
+      },
+      "movingToAruba": {
+        "title": "Verhuizen naar Aruba: Wat U Moet Weten Voordat U Verhuist",
+        "excerpt": "Onze analyse van rentetarieven, leenbeleid en wat deze betekenen voor uw aankoopproces van een huis.",
+        "category": "Financiën & Pensioen"
+      },
+      "rentingVsBuying": {
+        "title": "Huren vs. Kopen in Aruba",
+        "excerpt": "Alles wat u moet weten over het beschermen van uw eigendomsinvestering in het klimaat van Aruba.",
+        "category": "Hypotheken"
+      },
+      "bestNeighborhoods": {
+        "title": "Beste Wijken om een Huis te Kopen in Aruba",
+        "excerpt": "Een vergelijking van de beste kredietverstrekkers op het eiland.",
+        "category": "Hypotheken"
+      },
+      "mortgageMistakes": {
+        "title": "5 Veelvoorkomende Fouten bij het Aanvragen van een Hypotheek in Aruba",
+        "excerpt": "Begrijp het lokale pensioenstelsel en hoe het expats beïnvloedt.",
+        "category": "Hypotheken"
+      },
+      "healthInsurance": {
+        "title": "Zorgverzekering voor Expats in Aruba",
+        "excerpt": "Navigeer door de opties voor particuliere en comerciële zorgverzekering.",
+        "category": "Verzekeringen"
+      }
+    }
+  },
+  "footer": {
+    "tagline": "Uw betrouwbare bron voor financiële helderheid in Aruba.",
+    "disclaimer": "Alleen informatie – wij zijn geen financiële instelling of hypotheekverstrekker. Alle inhoud is alleen voor informatieve doeleinden en vormt geen financieel advies.",
+    "copyright": "OneHappyFinance.com. Alle Rechten Voorbehouden."
+  },
+  "toast": {
+    "comingSoon": {
+      "title": "Binnenkort Beschikbaar!",
+      "description": "Onze gedetailleerde gidsen worden gepubliceerd. Kom binnenkort terug voor deskundige inzichten!"
+    }
+  },
+  "about": {
+    "title": "Gebouwd voor de Financiële Realiteit van Aruba",
+    "paragraph1": "De economie van Aruba draait op sterke families, kleine bedrijven en eigendomsrecht. Maar financiële informatie kan ingewikkeld zijn — banken en makelaars gebruiken vaak verwarrend jargon.",
+    "paragraph2": "Daar komt OneHappyFinance om de hoek kijken. We maken financiële onderwerpen",
+    "highlight": "eenvoudig, transparant en lokaal",
+    "paragraph2End": "— van hypotheken tot verzekeringen, zodat u met vertrouwen beslissingen kunt nemen.",
+    "cta": "Verken Onze Gidsen"
+  },
+  "ourApproach": {
+    "title": "Uw Duidelijke Pad naar Financiële Vertrouwen",
+    "paragraph1": "We geloven dat iedereen duidelijke, onbevooroordeelde financiële begeleiding verdient, gebouwd op eenvoud, transparantie en een diep begrip van het unieke financiële landschap van Aruba.",
+    "paragraph2": "We doorbreken het jargon om u te voorzien van praktische inzichten, gemakkelijk te begrijpen gidsen en eerlijke vergelijkingen. Uw gemoedsrust is onze prioriteit, zodat u keuzes maakt die uw toekomst op het eiland echt ten goede komen.",
+    "cta": "Verken Onze Gidsen"
+  },
+  "whyChooseUs": {
+    "title": "Waarom Ons Kiezen?",
+    "reasons": {
+      "focused": "100% gericht op Aruba en het Caribisch gebied",
+      "transparent": "Transparante, gemakkelijk te lezen financiële informatie",
+      "noPressure": "Geen verkoopdruk — alleen helderheid",
+      "freeResources": "Gratis bronnen, gidsen en lokale inzichten",
+      "helpingAll": "Helpen zowel bewoners als buitenlanders om het systeem te navigeren",
+      "upToDate": "Bijgewerkt met lokale marktveranderingen"
+    }
+  },
+  "featuredGuides": {
+    "title": "Uitgelichte Gidsen",
+    "subtitle": "Onze nieuwste artikelen om u te helpen navigeren door het financiële landschap van Aruba.",
+    "readMore": "Lees Meer",
+    "guides": {
+      "buyingHouse": {
+        "title": "Een Huis Kopen in Aruba als Buitenlander – Wat U Moet Weten",
+        "excerpt": "Een complete gids voor eigendomsrechten, juridische processen en financiële overwegingen.",
+        "category": "Eigendom"
+      },
+      "mortgageRates": {
+        "title": "Hypotheekrente in Aruba: Wat Verandert er in 2026?",
+        "excerpt": "Onze analyse van rentetarieven, leenbeleid en wat deze betekenen voor uw aankoopproces van een huis.",
+        "category": "Hypotheken"
+      },
+      "homeInsurance": {
+        "title": "De Complete Gids voor Woonverzekering in Aruba",
+        "excerpt": "Alles wat u moet weten over het beschermen van uw eigendomsinvestering in het klimaat van Aruba.",
+        "category": "Verzekeringen"
+      }
+    }
+  }
+}
+

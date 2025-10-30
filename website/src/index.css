@@ -1,0 +1,92 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 98%; /* Lighter off-white */
+    --foreground: 222 20% 15%; /* #1E293B */
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 20% 15%;
+
+    --primary: 206 100% 36%; /* #0070BA */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 175 100% 35%; /* #00B3A4 */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 45 100% 68%; /* #FFD35B */
+    --accent-foreground: 222 20% 15%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 206 100% 36%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Define dark mode colors if needed later */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+
+  /* Subtle background pattern */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(0, 112, 186, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 112, 186, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-foreground;
+  }
+
+  p, span, li, a, label, input, textarea {
+    @apply font-sans;
+    line-height: 1.6;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Ensure content layers above pattern */
+@layer utilities {
+  .relative-z {
+    position: relative;
+    z-index: 1;
+  }
+}
