@@ -25,7 +25,7 @@ const About = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 md:py-28 bg-gradient-to-b from-background via-white to-background relative">
+    <section ref={ref} className="py-16 md:py-28 bg-gradient-to-b from-background via-white to-background relative">
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-2 gap-6 md:gap-16 items-center">
           
@@ -37,7 +37,7 @@ const About = () => {
             variants={variants}
             transition={{ duration: 0.7, delay: 0.4 }}
           >
-            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-center md:text-left">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4 text-center md:text-left">
               {t('about.title')}
             </h2>
             <div className="space-y-4 text-lg text-foreground/80 text-center md:text-left">
@@ -53,7 +53,7 @@ const About = () => {
               animate={inView ? "visible" : "hidden"}
               variants={variants}
               transition={{ duration: 0.7, delay: 0.6 }}
-              className="flex justify-center md:justify-start mt-8"
+              className="flex justify-center md:justify-start mt-6"
             >
               <Button 
                 size="lg" 
@@ -68,7 +68,7 @@ const About = () => {
 
           {/* Image Content - Order 2 on mobile */}
           <motion.div
-            className="relative order-2 md:order-1"
+            className="relative order-2 md:order-1 mt-6 md:mt-0"
             initial="hidden"
             animate={inView ? "visible" : "hidden"}
             variants={{

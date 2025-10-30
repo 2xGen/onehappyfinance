@@ -39,10 +39,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-br from-blue-50 via-white to-cyan-50/30 -mt-20 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-blue-50 via-white to-cyan-50/30 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50 pointer-events-none"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 items-center gap-8 md:gap-12 min-h-screen pt-28 md:pt-20">
+        <div className="grid md:grid-cols-2 items-center gap-6 md:gap-12 pt-24 md:pt-20 pb-10 md:pb-0">
           
           {/* Text Content (Order 1 on mobile and desktop) */}
           <div className="pt-8 md:pt-0 text-center md:text-left order-1">
@@ -50,7 +50,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="font-heading text-4xl md:text-[42px] font-bold mb-6 leading-tight text-foreground"
+              className="font-heading text-4xl md:text-[42px] font-bold mb-4 leading-tight text-foreground"
             >
               {t('hero.title')}{' '}
               <AnimatedWord wordIndex={0} activeIndex={activeWordIndex}>{t('hero.mortgages')}</AnimatedWord>
@@ -65,7 +65,7 @@ const Hero = () => {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.7, delay: 0.4 }}
-              className="text-lg md:text-xl mb-10 text-foreground/80"
+              className="text-lg md:text-xl mb-6 text-foreground/80"
             >
               {t('hero.subtitle')}
             </motion.p>
@@ -89,7 +89,7 @@ const Hero = () => {
 
           {/* Image Content (Order 2 on mobile and desktop) */}
           <motion.div 
-            className="relative h-80 md:h-auto order-2"
+            className="relative h-80 md:h-auto order-2 mt-6 md:mt-0"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.9, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
