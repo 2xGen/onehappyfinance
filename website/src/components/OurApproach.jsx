@@ -27,7 +27,7 @@ const OurApproach = () => {
   return (
     <section ref={ref} className="py-20 md:py-28 bg-gradient-to-b from-background via-gray-50/50 to-background relative">
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-16 items-center">
           
           {/* Text Content - Order 1 on mobile */}
           <motion.div

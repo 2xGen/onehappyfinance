@@ -10,6 +10,19 @@ import { Input } from '@/src/components/ui/input';
 import { useTranslations, useLocale } from '@/src/contexts/LocaleContext';
 import { addLocaleToPath } from '@/i18n/config';
 
+export const metadata = {
+  openGraph: {
+    images: [
+      {
+        url: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/onehappyfinance.png',
+        width: 1200,
+        height: 630,
+        alt: 'OneHappyFinance Guides',
+      },
+    ],
+  },
+};
+
 // Dummy AnimatePresence for layout animation
 const AnimatePresence = ({ children }) => <>{children}</>;
 
@@ -19,97 +32,32 @@ export default function GuidesPage() {
   const [activeFilter, setActiveFilter] = useState(t('guides.categories.all'));
   const [searchTerm, setSearchTerm] = useState('');
 
-  const allGuides = (
-    locale === 'nl'
-      ? [
-          {
-            title: 'Hypotheek in Aruba: Complete Gids voor Inwoners en Niet-Inwoners',
-            excerpt: 'Zo krijg je een hypotheek in Aruba — stap voor stap uitgelegd.',
-            category: 'Hypotheken',
-            link: '/aw/guides/hypotheek-in-aruba-complete-gids-voor-inwoners-en-niet-inwoners',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20to%20Get%20a%20Mortgage%20in%20Aruba.png',
-          },
-          {
-            title: 'Kunnen Buitenlanders een Huis Kopen op Aruba?',
-            excerpt: 'Eigendom vs erfpacht, proces, kosten en hypotheken voor niet-ingezetenen.',
-            category: 'Hypotheken',
-            link: '/aw/guides/kunnen-buitenlanders-een-huis-kopen-op-aruba-gids-2025',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Can%20Foreigners%20Buy%20Property%20in%20Aruba.png',
-          },
-          {
-            title: 'Hypotheek Vereisten in Aruba | Checklist',
-            excerpt: 'Documenten voor een hypotheek op Aruba — inclusief checklist en bankvereisten.',
-            category: 'Hypotheken',
-            link: '/aw/guides/hypotheek-vereisten-in-aruba-2025-gids',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Mortgage%20Requirements%20in%20Aruba.png',
-          },
-          {
-            title: 'Wat is een Annuïteitenhypotheek?',
-            excerpt: 'Hoe vaste maandlasten werken in Aruba — uitleg, voor- en nadelen en voorbeeld.',
-            category: 'Hypotheken',
-            link: '/aw/guides/wat-is-een-annuiteitenhypotheek-in-aruba-2025-gids',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/What%20Is%20an%20Annuity%20Mortgage%20and%20How%20Does%20It%20Work%20in%20Aruba.png',
-          },
-          {
-            title: 'Hoeveel Kun Je Lenen in Aruba?',
-            excerpt: 'Factoren, voorbeeldberekening, algemene berekening, tips en FAQ over leencapaciteit.',
-            category: 'Hypotheken',
-            link: '/aw/guides/hoeveel-kun-je-lenen-in-aruba-2025-gids',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20much%20can%20you%20borrow%20for%20a%20mortgage%20in%20aruba.png',
-          },
-          {
-            title: 'Eigendom vs. Erfpacht in Aruba',
-            excerpt: 'Verschillen, kosten, beperkingen en financiering tussen eigendom en erfpacht.',
-            category: 'Hypotheken',
-            link: '/aw/guides/eigendom-vs-erfpacht-in-aruba-2025-gids',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Freehold%20vs.%20Lease%20Land%20in%20Aruba.png',
-          },
-        ]
-      : [
-          {
-            title: 'How to Get a Mortgage in Aruba',
-            excerpt: 'Step-by-step guide to getting a mortgage in Aruba for residents and non-residents.',
-            category: 'Mortgages',
-            link: '/aw/guides/how-to-get-a-mortgage-in-aruba',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20to%20Get%20a%20Mortgage%20in%20Aruba.png',
-          },
-          {
-            title: 'Can Foreigners Buy Property in Aruba?',
-            excerpt: 'Yes — foreigners can buy. Freehold vs lease land, process, costs, and financing.',
-            category: 'Mortgages',
-            link: '/aw/guides/can-foreigners-buy-property-in-aruba-2025-guide',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Can%20Foreigners%20Buy%20Property%20in%20Aruba.png',
-          },
-          {
-            title: 'Mortgage Requirements in Aruba | Full Checklist',
-            excerpt: 'Exactly which documents you need — plus a printable checklist and bank requirements.',
-            category: 'Mortgages',
-            link: '/aw/guides/mortgage-requirements-in-aruba-2025-guide',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Mortgage%20Requirements%20in%20Aruba.png',
-          },
-          {
-            title: 'What Is an Annuity Mortgage in Aruba?',
-            excerpt: 'How annuity mortgages work in Aruba — payments, pros & cons, eligibility, and examples.',
-            category: 'Mortgages',
-            link: '/aw/guides/what-is-an-annuity-mortgage-in-aruba',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/What%20Is%20an%20Annuity%20Mortgage%20and%20How%20Does%20It%20Work%20in%20Aruba.png',
-          },
-          {
-            title: 'How Much Can You Borrow in Aruba?',
-            excerpt: 'How banks calculate borrowing power — factors, example, calculators, tips, and FAQs.',
-            category: 'Mortgages',
-            link: '/aw/guides/how-much-can-you-borrow-in-aruba',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20much%20can%20you%20borrow%20for%20a%20mortgage%20in%20aruba.png',
-          },
-          {
-            title: 'Freehold vs. Lease Land in Aruba',
-            excerpt: 'Differences, fees, restrictions, and financing between freehold and lease land.',
-            category: 'Mortgages',
-            link: '/aw/guides/freehold-vs-lease-land-in-aruba',
-            image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Freehold%20vs.%20Lease%20Land%20in%20Aruba.png',
-          },
-        ]
-  );
+  const allGuides = useMemo(() => [
+    {
+      title: t('guides.items.howToGetMortgage.title'),
+      excerpt: t('guides.items.howToGetMortgage.excerpt'),
+      category: t('guides.items.howToGetMortgage.category'),
+      link: '/aw/guides/how-to-get-a-mortgage-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20to%20Get%20a%20Mortgage%20in%20Aruba.png',
+      imgAlt: 'How to Get a Mortgage in Aruba'
+    },
+    {
+      title: t('guides.items.canForeignersBuyProperty.title'),
+      excerpt: t('guides.items.canForeignersBuyProperty.excerpt'),
+      category: t('guides.items.canForeignersBuyProperty.category'),
+      link: '/aw/guides/can-foreigners-buy-property-in-aruba-2025-guide',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Can%20Foreigners%20Buy%20Property%20in%20Aruba.png',
+      imgAlt: 'Can Foreigners Buy Property in Aruba'
+    },
+    {
+      title: t('guides.items.mortgageRequirements.title'),
+      excerpt: t('guides.items.mortgageRequirements.excerpt'),
+      category: t('guides.items.mortgageRequirements.category'),
+      link: '/aw/guides/mortgage-requirements-in-aruba-2025-guide',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Mortgage%20Requirements%20in%20Aruba.png',
+      imgAlt: 'Mortgage Requirements in Aruba'
+    },
+  ], [t]);
 
   const categories = useMemo(() => [
     t('guides.categories.all'),
@@ -198,8 +146,8 @@ export default function GuidesPage() {
                     <Link href={addLocaleToPath(guide.link, locale)} className="block overflow-hidden h-48">
                       <Image 
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
-                        alt={guide.title} 
-                        src={guide.image || 'https://images.unsplash.com/photo-1561784541-9a06ac2eb2ea'}
+                        alt={guide.imgAlt} 
+                        src={guide.imgSrc}
                         width={400}
                         height={200}
                       />
