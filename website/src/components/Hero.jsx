@@ -42,7 +42,7 @@ const Hero = () => {
     <section className="relative bg-gradient-to-br from-blue-50 via-white to-cyan-50/30 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/50 pointer-events-none"></div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 items-center gap-6 md:gap-12 pt-24 md:pt-20 pb-10 md:pb-0">
+        <div className="grid md:grid-cols-2 items-center gap-6 md:gap-12 pt-24 md:pt-12 pb-10 md:pb-6">
           
           {/* Text Content (Order 1 on mobile and desktop) */}
           <div className="pt-8 md:pt-0 text-center md:text-left order-1">
