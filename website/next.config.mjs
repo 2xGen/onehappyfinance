@@ -1,6 +1,5 @@
 /**
- * Next.js configuration for OneHappyFinance
- * - Enables remote images from Supabase storage domain
+ * Next.js configuration for OneHappyFinance (ESM)
  */
 
 /** @type {import('next').NextConfig} */
@@ -17,4 +16,4 @@ const nextConfig = {
 	},
 };
 
-module.exports = nextConfig;
+export default nextConfig;
