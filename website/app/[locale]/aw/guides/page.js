@@ -21,30 +21,54 @@ export default function GuidesPage() {
 
   const allGuides = useMemo(() => [
     {
-      title: t('guides.items.howToGetMortgage.title'),
-      excerpt: t('guides.items.howToGetMortgage.excerpt'),
-      category: t('guides.items.howToGetMortgage.category'),
+      title: locale === 'nl' ? 'Hypotheek in Aruba: Complete Gids voor Inwoners en Niet-Inwoners' : 'How to Get a Mortgage in Aruba',
+      excerpt: locale === 'nl' ? 'Zo krijg je een hypotheek in Aruba — stap voor stap uitgelegd.' : 'Step-by-step guide to getting a mortgage in Aruba for residents and non-residents.',
+      category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
       link: '/aw/guides/how-to-get-a-mortgage-in-aruba',
       imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20to%20Get%20a%20Mortgage%20in%20Aruba.png',
-      imgAlt: 'How to Get a Mortgage in Aruba'
+      imgAlt: locale === 'nl' ? 'Hypotheek in Aruba' : 'How to Get a Mortgage in Aruba',
     },
     {
-      title: t('guides.items.canForeignersBuyProperty.title'),
-      excerpt: t('guides.items.canForeignersBuyProperty.excerpt'),
-      category: t('guides.items.canForeignersBuyProperty.category'),
+      title: locale === 'nl' ? 'Kunnen Buitenlanders een Huis Kopen op Aruba?' : 'Can Foreigners Buy Property in Aruba?',
+      excerpt: locale === 'nl' ? 'Eigendom vs erfpacht, proces, kosten en hypotheken voor niet-ingezetenen.' : 'Freehold vs lease land, process, costs, and financing for non-residents.',
+      category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
       link: '/aw/guides/can-foreigners-buy-property-in-aruba-2025-guide',
       imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Can%20Foreigners%20Buy%20Property%20in%20Aruba.png',
-      imgAlt: 'Can Foreigners Buy Property in Aruba'
+      imgAlt: locale === 'nl' ? 'Kunnen Buitenlanders een Huis Kopen op Aruba?' : 'Can Foreigners Buy Property in Aruba',
     },
     {
-      title: t('guides.items.mortgageRequirements.title'),
-      excerpt: t('guides.items.mortgageRequirements.excerpt'),
-      category: t('guides.items.mortgageRequirements.category'),
+      title: locale === 'nl' ? 'Hypotheek Vereisten in Aruba | Checklist' : 'Mortgage Requirements in Aruba | Full Checklist',
+      excerpt: locale === 'nl' ? 'Documenten voor een hypotheek op Aruba — inclusief checklist en bankvereisten.' : 'Exactly which documents you need — plus a printable checklist and bank requirements.',
+      category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
       link: '/aw/guides/mortgage-requirements-in-aruba-2025-guide',
       imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Mortgage%20Requirements%20in%20Aruba.png',
-      imgAlt: 'Mortgage Requirements in Aruba'
+      imgAlt: locale === 'nl' ? 'Hypotheek Vereisten in Aruba' : 'Mortgage Requirements in Aruba',
     },
-  ], [t]);
+    {
+      title: locale === 'nl' ? 'Wat is een Annuïteitenhypotheek?' : 'What Is an Annuity Mortgage in Aruba?',
+      excerpt: locale === 'nl' ? 'Hoe vaste maandlasten werken in Aruba — uitleg, voor- en nadelen en voorbeeld.' : 'How annuity mortgages work in Aruba — payments, pros & cons, eligibility, and examples.',
+      category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
+      link: '/aw/guides/what-is-an-annuity-mortgage-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/What%20Is%20an%20Annuity%20Mortgage%20and%20How%20Does%20It%20Work%20in%20Aruba.png',
+      imgAlt: locale === 'nl' ? 'Annuïteitenhypotheek in Aruba' : 'Annuity Mortgage in Aruba',
+    },
+    {
+      title: locale === 'nl' ? 'Hoeveel Kun Je Lenen in Aruba?' : 'How Much Can You Borrow in Aruba?',
+      excerpt: locale === 'nl' ? 'Factoren, voorbeeldberekening, algemene berekening, tips en FAQ over leencapaciteit.' : 'How banks calculate borrowing power — factors, example, calculators, tips, and FAQs.',
+      category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
+      link: '/aw/guides/how-much-can-you-borrow-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20much%20can%20you%20borrow%20for%20a%20mortgage%20in%20aruba.png',
+      imgAlt: locale === 'nl' ? 'Hoeveel kun je lenen in Aruba' : 'How Much Can You Borrow in Aruba',
+    },
+    {
+      title: locale === 'nl' ? 'Eigendom vs. Erfpacht in Aruba' : 'Freehold vs. Lease Land in Aruba',
+      excerpt: locale === 'nl' ? 'Verschillen, kosten, beperkingen en financiering tussen eigendom en erfpacht.' : 'Differences, fees, restrictions, and financing between freehold and lease land.',
+      category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
+      link: '/aw/guides/freehold-vs-lease-land-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Freehold%20vs.%20Lease%20Land%20in%20Aruba.png',
+      imgAlt: locale === 'nl' ? 'Eigendom vs. Erfpacht in Aruba' : 'Freehold vs. Lease Land in Aruba',
+    },
+  ], [locale]);
 
   const categories = useMemo(() => [
     t('guides.categories.all'),
