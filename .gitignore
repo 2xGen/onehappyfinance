@@ -1,15 +1,36 @@
-﻿# Node / Next.js
+﻿# Dependencies
 node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Builds
 .next/
-.out/
 .vercel/
+.out/
+dist/
+build/
 
-# Env
-.env
-.env.local
-.env.*.local
-
-# OS / editors
+# OS/Editor
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
+.idea/
 .vscode/
+
+# Env files
+.env
+.env.*
+
+# Misc
+coverage/
+*.local
+
+# Monorepo subfolders (ensure nested artifacts are ignored)
+website/.next/
+website/node_modules/
+website/.vercel/
