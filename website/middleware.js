@@ -1,58 +1,33 @@
 import { NextResponse } from 'next/server';
-import { locales, defaultLocale } from './i18n/config';
+import { locales, defaultLocale, removeLocaleFromPath, localizedSlugPairs } from './i18n/config';
 
-export function middleware(request) {
-  const { pathname } = request.nextUrl;
-  const pathnameHasLocale = locales.some(
-    (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
-  );
+export function middleware(req) {
+	const { pathname } = req.nextUrl;
+	const segments = pathname.split('/').filter(Boolean);
+	if (segments.length === 0) return NextResponse.next();
+	const currentLocale = locales.includes(segments[0]) ? segments[0] : defaultLocale;
+	const pathWithoutLocale = removeLocaleFromPath(pathname);
 
-  // If pathname already has a locale, allow it
-  if (pathnameHasLocale) {
-    return NextResponse.next();
-  }
+	// Find a pair where pathWithoutLocale matches a value for the opposite locale
+	for (const pair of localizedSlugPairs) {
+		const en = pair.en;
+		const nl = pair.nl;
+		if (currentLocale === 'nl' && pathWithoutLocale === en) {
+			const url = req.nextUrl.clone();
+			url.pathname = `/nl${nl}`;
+			return NextResponse.redirect(url, 308);
+		}
+		if (currentLocale === 'en' && pathWithoutLocale === nl) {
+			const url = req.nextUrl.clone();
+			url.pathname = `/en${en}`;
+			return NextResponse.redirect(url, 308);
+		}
+	}
 
-  // Get locale from Accept-Language header or use default
-  const locale = getLocaleFromHeaders(request) || defaultLocale;
-
-  // Redirect to locale-prefixed path
-  const newUrl = new URL(`/${locale}${pathname}`, request.url);
-  return NextResponse.redirect(newUrl);
-}
-
-function getLocaleFromHeaders(request) {
-  const acceptLanguage = request.headers.get('accept-language');
-  if (!acceptLanguage) return null;
-
-  // Parse Accept-Language header
-  const languages = acceptLanguage
-    .split(',')
-    .map((lang) => {
-      const [code, q = 'q=1'] = lang.trim().split(';');
-      const quality = parseFloat(q.split('=')[1]) || 1;
-      return { code: code.split('-')[0].toLowerCase(), quality };
-    })
-    .sort((a, b) => b.quality - a.quality);
-
-  // Find first matching locale
-  for (const lang of languages) {
-    if (locales.includes(lang.code)) {
-      return lang.code;
-    }
-  }
-
-  return null;
+	return NextResponse.next();
 }
 
 export const config = {
-  matcher: [
-    // Match all pathnames except for
-    // - api routes
-    // - _next/static (static files)
-    // - _next/image (image optimization files)
-    // - favicon.ico (favicon file)
-    // - public files and sitemaps/robots
-    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|sitemap.xml.gz|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
-  ],
+	matcher: ['/((?!_next|.*\.(?:png|jpg|jpeg|gif|webp|svg|ico)|api).*)'],
 };
 
