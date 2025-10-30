@@ -10,19 +10,6 @@ import { Input } from '@/src/components/ui/input';
 import { useTranslations, useLocale } from '@/src/contexts/LocaleContext';
 import { addLocaleToPath } from '@/i18n/config';
 
-export const metadata = {
-  openGraph: {
-    images: [
-      {
-        url: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/onehappyfinance.png',
-        width: 1200,
-        height: 630,
-        alt: 'OneHappyFinance Guides',
-      },
-    ],
-  },
-};
-
 // Dummy AnimatePresence for layout animation
 const AnimatePresence = ({ children }) => <>{children}</>;
 

@@ -1,5 +1,3 @@
-'use client';
-
 import Hero from '@/src/components/Hero'
 import About from '@/src/components/About'
 import OurApproach from '@/src/components/OurApproach'

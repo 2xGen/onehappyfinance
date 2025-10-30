@@ -1,27 +1,17 @@
-export async function generateMetadata({ params }) {
-  const resolvedParams = await params;
-  const locale = resolvedParams?.locale || 'en';
-  
-  const titles = {
-    en: 'Financial Guides for Aruba | OneHappyFinance',
-    nl: 'Financiële Gidsen voor Aruba | OneHappyFinance',
-  };
-
-  const descriptions = {
-    en: 'Explore our expert guides on mortgages, insurance, finance, and retirement in Aruba. Get the clarity you need to make smart financial decisions.',
-    nl: 'Ontdek onze deskundige gidsen over hypotheken, verzekeringen, financiën en pensioen in Aruba. Krijg de helderheid die u nodig heeft om slimme financiële beslissingen te nemen.',
-  };
-
-  return {
-    title: titles[locale] || titles.en,
-    description: descriptions[locale] || descriptions.en,
-    alternates: {
-      canonical: `https://onehappyfinance.com/${locale}/aw/guides`,
-    },
-  };
-}
+export const metadata = {
+	openGraph: {
+		images: [
+			{
+				url: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/onehappyfinance.png',
+				width: 1200,
+				height: 630,
+				alt: 'OneHappyFinance Guides',
+			},
+		],
+	},
+};
 
 export default function GuidesLayout({ children }) {
-  return <>{children}</>;
+	return children;
 }
 
