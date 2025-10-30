@@ -1,13 +1,2 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'soaacpusdhyxwucjhhpy.supabase.co',
-      },
-    ],
-  },
-};
-
-module.exports = nextConfig;
+// moved to next.config.cjs to be compatible with "type": "module"
+// see next.config.cjs
