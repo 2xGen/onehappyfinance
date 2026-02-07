@@ -8,13 +8,10 @@ export default function BreadcrumbsClient() {
   const { locale } = useLocale();
   const pathname = usePathname();
 
-  const isDutch = locale === 'nl';
   const labels = {
-    home: isDutch ? 'Home' : 'Home',
-    guides: isDutch ? 'Gidsen' : 'Guides',
-    article: isDutch
-      ? 'Wat is een Annuïteitenhypotheek in Aruba?'
-      : 'What Is an Annuity Mortgage in Aruba?',
+    home: 'Home',
+    guides: 'Gidsen',
+    article: 'Verzekering in Aruba Begrijpen',
   };
 
   const crumbs = [

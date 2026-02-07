@@ -4,25 +4,26 @@ import Breadcrumbs from './BreadcrumbsClient'
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Mortgage%20Requirements%20in%20Aruba.png'
 
 export const metadata = {
-  title: 'Mortgage Requirements in Aruba (2025) | Full Checklist & Documents Needed',
-  description: 'Learn exactly what documents you need for a mortgage in Aruba. Step-by-step guide for residents and non-residents, including checklist and bank requirements (Aruba Bank & RBC).',
+  title: 'Aruba Mortgage Requirements for Non-Residents | Full Checklist & Documents',
+  description: 'Aruba mortgage requirements for non-residents: 40–50% down payment, 15-year max term, 5–7% rates. Documents, checklist, Aruba Bank & RBC, closing costs, and construction financing.',
   keywords: [
+    'Aruba mortgage requirements for non-residents',
     'mortgage requirements Aruba',
     'documents for mortgage Aruba',
     'Aruba mortgage checklist',
-    'Aruba home loan documents',
     'Aruba Bank mortgage',
     'RBC Aruba mortgage',
+    'non-resident mortgage Aruba',
   ],
   alternates: {
-    canonical: 'https://onehappyfinance.com/en/aw/guides/mortgage-requirements-in-aruba-2025-guide',
+    canonical: 'https://onehappyfinance.com/en/aw/guides/mortgage-requirements-in-aruba',
   },
   openGraph: {
-    title: 'Mortgage Requirements in Aruba (2025) | Full Checklist & Documents Needed',
+    title: 'Aruba Mortgage Requirements for Non-Residents | Full Checklist & Documents',
     description: 'Step-by-step mortgage document checklist for Aruba, with bank-specific requirements (Aruba Bank & RBC).',
     type: 'article',
     images: [
-      { url: FEATURED_IMAGE, width: 1200, height: 630, alt: 'Mortgage Requirements in Aruba (2025) | Checklist' },
+      { url: FEATURED_IMAGE, width: 1200, height: 630, alt: 'Mortgage Requirements in Aruba | Checklist' },
     ],
   },
 }
@@ -34,7 +35,7 @@ function BreadcrumbSchema({ locale }) {
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: `https://onehappyfinance.com/${locale}` },
       { '@type': 'ListItem', position: 2, name: 'Guides', item: `https://onehappyfinance.com/${locale}/aw/guides` },
-      { '@type': 'ListItem', position: 3, name: 'Mortgage Requirements in Aruba (2025 Guide)', item: `https://onehappyfinance.com/${locale}/aw/guides/mortgage-requirements-in-aruba-2025-guide` },
+      { '@type': 'ListItem', position: 3, name: 'Aruba Mortgage Requirements for Non-Residents', item: `https://onehappyfinance.com/${locale}/aw/guides/mortgage-requirements-in-aruba` },
     ],
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -44,24 +45,24 @@ function ArticleSchema() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Mortgage Requirements in Aruba (2025) | Full Checklist & Documents Needed',
+    headline: 'Aruba Mortgage Requirements for Non-Residents | Full Checklist & Documents',
     image: [FEATURED_IMAGE],
-    description: 'Learn exactly what documents you need for a mortgage in Aruba. Guide for residents and non-residents, including checklist and bank requirements.',
+    description: 'Aruba mortgage requirements for non-residents: 40–50% down payment, 15-year max term, 5–7% rates. Documents, checklist, Aruba Bank, Banco di Caribe, RBC.',
     author: { '@type': 'Organization', name: 'OneHappyFinance' },
     publisher: { '@type': 'Organization', name: 'OneHappyFinance', logo: { '@type': 'ImageObject', url: FEATURED_IMAGE } },
     datePublished: '2025-10-30',
-    dateModified: '2025-10-30',
-    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://onehappyfinance.com/en/aw/guides/mortgage-requirements-in-aruba-2025-guide' },
+    dateModified: '2026-02-07',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://onehappyfinance.com/en/aw/guides/mortgage-requirements-in-aruba' },
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 }
 
 function FaqSchema() {
   const qa = [
-    { q: 'Can foreigners apply for a mortgage in Aruba?', a: 'Yes. Both Aruba Bank and RBC Royal Bank offer mortgages for non-residents, usually with a 35–40% down payment.' },
-    { q: 'Do I need to live in Aruba to get a mortgage?', a: "No. You don’t need to be a resident, but banks will require extra documentation like a foreign credit report and proof of income." },
-    { q: 'Can I use my foreign bank account for payments?', a: 'Yes, most lenders allow international transfers and USD payments from overseas accounts.' },
-    { q: 'How long does mortgage approval take in Aruba?', a: 'Typically 2–3 weeks once all documentation is submitted and verified.' },
+    { q: 'What are Aruba mortgage requirements for non-residents?', a: 'Non-residents typically need a 40–50% down payment, max 15-year term, valid passport, proof of income, bank reference letters, and an appraisal report. Interest rates are often 5–7%.' },
+    { q: 'Can foreigners apply for a mortgage in Aruba?', a: 'Yes. Aruba Bank, Banco di Caribe, and RBC Royal Bank offer mortgages for non-residents, usually with a 40–50% down payment and max 15-year term.' },
+    { q: 'How long does mortgage approval take in Aruba?', a: 'Pre-approval often takes about 2 weeks. Full approval can take 4–5 weeks for compliance. The full process from application to financing may take around 2 months.' },
+    { q: 'What are the closing costs for an Aruba mortgage?', a: 'Expect roughly 1% of the loan amount in bank fees, plus notary fees (transfer deed and mortgage deed). Total buyer-side costs often add up to 5–12% of the purchase price.' },
     { q: 'Do I need a local notary?', a: 'Yes. All property transactions in Aruba must be processed through a local notary.' },
   ];
   const jsonLd = {
@@ -87,8 +88,8 @@ export default function Page({ params }) {
         </div>
         <div className="relative p-6 md:p-10">
           <span className="inline-block text-xs tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">Guides</span>
-          <h1 className="mt-4 font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">Mortgage Requirements in Aruba: What Documents You’ll Need (2025 Guide)</h1>
-          <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">A complete mortgage documents checklist for Aruba — for residents and non-residents.</p>
+          <h1 className="mt-4 font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">Aruba Mortgage Requirements for Non-Residents</h1>
+          <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">40–50% down payment, max 15-year term, and full document checklist. Aruba Bank, Banco di Caribe, and RBC requirements for international buyers.</p>
           <Breadcrumbs />
         </div>
       </section>
@@ -97,12 +98,34 @@ export default function Page({ params }) {
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
         <div className="lg:col-span-8 space-y-10">
           <section id="req" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1. What Are the Main Mortgage Requirements in Aruba?</h2>
-            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Banks need to confirm who you are, how you will repay the loan, and what property you’re buying. Requirements vary slightly for residents and non-residents, but identity, income, and property documents form the core of every application.</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1. Aruba Mortgage Requirements for Non-Residents</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Aruban banks finance roughly 50–60% of the purchase price for non-residents, with interest rates typically between 5% and 7%. Banks must confirm your identity, income, and the property you're buying. Below are the main requirements for non-resident applicants.</p>
+          </section>
+
+          <section id="nonresidents" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2. Key Requirements for Non-Residents</h2>
+            <div className="mt-5 overflow-x-auto rounded-2xl border bg-white shadow-sm">
+              <table className="min-w-full text-sm">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="text-left p-3 font-semibold">Requirement</th>
+                    <th className="text-left p-3 font-semibold">Typical Range</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y text-foreground/80">
+                  <tr><td className="p-3">Down Payment</td><td className="p-3">40% – 50% of property value</td></tr>
+                  <tr><td className="p-3">Maximum Financing (LTV)</td><td className="p-3">60% – 65% of purchase price or appraisal</td></tr>
+                  <tr><td className="p-3">Loan Term</td><td className="p-3">Max 15 years (non-residents)</td></tr>
+                  <tr><td className="p-3">Interest Rate</td><td className="p-3">Approx. 5% – 7% (USD)</td></tr>
+                  <tr><td className="p-3">Minimum Age</td><td className="p-3">21; loan must be repaid before retirement age</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Non-residents must provide fire and life insurance with the bank as first beneficiary. Closing costs typically include about 1% of the loan amount in bank fees, plus notary fees.</p>
           </section>
 
           <section id="core" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2. Core Documents Every Applicant Needs</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3. Required Documents Checklist</h2>
             <div className="mt-5 overflow-x-auto rounded-2xl border bg-white shadow-sm">
               <table className="min-w-full text-sm">
                 <thead className="bg-gray-50">
@@ -114,16 +137,18 @@ export default function Page({ params }) {
                 </thead>
                 <tbody className="divide-y">
                   {[
-                    ['Valid Passport or ID', 'Confirms identity', 'Residents and non-residents'],
-                    ['Recent Payslips (3 months)', 'Proof of income', 'Self-employed need financial statements'],
-                    ['Employer Letter / Income Verification', 'Confirms employment and salary', 'Dated within 30 days'],
-                    ['Bank Statements (3–6 months)', 'Shows savings and income flow', 'Especially important for foreign buyers'],
-                    ['Credit Report', 'Confirms financial reliability', 'From home country if non-resident'],
-                    ['Tax Return or Annual Statement', 'Verifies income consistency', '1–2 years typically required'],
-                    ['Purchase Agreement', 'Confirms agreed sale', 'Signed by buyer and seller'],
-                    ['Appraisal Report (Taxatie)', 'Determines property value', 'From approved local appraiser'],
-                    ['Proof of Down Payment', 'Shows funds ready', 'Typically 25–40% of price'],
-                    ['Home Insurance Quote', 'Required for approval', 'Usually arranged via the bank'],
+                    ['Two valid IDs (Passport + Driver\'s License)', 'Confirms identity', 'Both valid for at least 2 months'],
+                    ['Employer Letter', 'Job title, salary, start date', 'Confirms employment'],
+                    ['Proof of Residential Address', 'Utility bill, census registration', 'Establishes address'],
+                    ['Payslips (last 2–3 months)', 'Proof of income', 'Or pension/income certification'],
+                    ['Bank Statements (3 months)', 'Shows savings and income flow', 'Non-residents: 3–6 months'],
+                    ['Two Bank Reference Letters', 'Financial reliability', 'From financial institutions'],
+                    ['Credit Score Report', 'Financial responsibility', 'From home country if non-resident'],
+                    ['Declaration of Assets/Liabilities', 'Source of wealth', 'Required by many banks'],
+                    ['Purchase Agreement or Proof of Ownership', 'Confirms property', 'Signed by buyer and seller'],
+                    ['Appraisal Report', 'Property market value', 'From Aruban appraiser, not older than 6 months'],
+                    ['Home Insurance (Fire & Life)', 'Required for approval', 'Bank as first beneficiary'],
+                    ['Financial Statements (self-employed)', 'Company financials', 'Last 2 years, audited'],
                   ].map((row) => (
                     <tr key={row[0]}>
                       <td className="p-3">{row[0]}</td>
@@ -137,7 +162,7 @@ export default function Page({ params }) {
           </section>
 
           <section id="banks" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3. Mortgage Requirements by Bank</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4. Mortgage Requirements by Bank</h2>
             <div className="mt-4 grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border p-5 bg-white shadow-sm">
                 <h3 className="m-0 font-semibold">Aruba Bank</h3>
@@ -147,9 +172,9 @@ export default function Page({ params }) {
                   <li>Bank statements (6 months)</li>
                   <li>Appraisal by approved appraiser</li>
                   <li>Purchase agreement</li>
-                  <li>Down payment proof (35–40%)</li>
+                  <li>Down payment proof (40–50% for non-residents)</li>
                   <li>Self-employed: audited financials (2 years)</li>
-                  <li>Non-residents: foreign credit report, bank reference, proof of assets</li>
+                  <li>Non-residents: two bank reference letters, foreign credit report, proof of assets</li>
                 </ul>
               </div>
               <div className="rounded-2xl border p-5 bg-white shadow-sm">
@@ -158,7 +183,7 @@ export default function Page({ params }) {
                   <li>Valid ID, income proof (3 months)</li>
                   <li>Tax returns (2 years), bank statements (3 months)</li>
                   <li>Appraisal report and signed purchase contract</li>
-                  <li>Down payment minimum ~35%</li>
+                  <li>Down payment minimum ~40% for non-residents</li>
                   <li>Home insurance policy</li>
                   <li>DSR check: total debt ≤ ~40% of income</li>
                 </ul>
@@ -167,7 +192,7 @@ export default function Page({ params }) {
           </section>
 
           <section id="checklist" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4. Mortgage Checklist for Aruba</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5. Mortgage Checklist for Aruba</h2>
             <div className="mt-4 grid md:grid-cols-2 gap-4">
               <div className="rounded-2xl border p-5 bg-white shadow-sm">
                 <h3 className="m-0 font-semibold">Personal Identification</h3>
@@ -207,28 +232,35 @@ export default function Page({ params }) {
             </div>
           </section>
 
-          <section id="timelines" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5. How Long Does the Mortgage Process Take?</h2>
+          <section id="construction" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6. Additional Requirements for Construction</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">When financing new construction in Aruba, banks typically require extra documentation from the Public Works Department (D.O.W.) and your contractor:</p>
             <ul className="mt-4 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
-              <li>Pre-approval: 3–5 business days</li>
-              <li>Full approval: 2–3 weeks</li>
-              <li>Closing: 4–6 weeks after approval</li>
+              <li>Approved building permit (blue card) from D.O.W.</li>
+              <li>Approved construction drawings from the Public Works Department</li>
+              <li>Contractor&apos;s quotation with project details</li>
+              <li>Contractor&apos;s Chamber of Commerce registration</li>
+              <li>Appraisal report for land and planned construction value</li>
             </ul>
-            <p className="mt-3 text-foreground/80 leading-7">Tip: Fastest approvals come from complete document packages.</p>
           </section>
 
-          <section id="terms" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6. Typical Down Payments and Terms</h2>
+          <section id="timelines" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">7. How Long Does the Mortgage Process Take?</h2>
             <ul className="mt-4 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
-              <li>Residents: 20–25% down payment</li>
-              <li>Non-residents: 35–40% down payment</li>
-              <li>Interest rates: ~5%–7% (USD)</li>
-              <li>Loan terms: up to 30 years (residents) / 15–20 years (non-residents)</li>
+              <li>Pre-approval: about 2 weeks after submitting documents</li>
+              <li>Compliance and final approval: 4–5 weeks</li>
+              <li>Full financing completion: roughly 2 months total</li>
             </ul>
+            <p className="mt-3 text-foreground/80 leading-7">Prepare all documentation in advance to avoid delays.</p>
+          </section>
+
+          <section id="closing" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">8. Closing Costs and Important Considerations</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Expect roughly 1% of the loan amount in bank fees, plus notary fees (transfer deed and mortgage deed). Total buyer-side costs often add up to 5–12% of the purchase price. The minimum age to apply is typically 21, and the loan must be repaid before retirement age.</p>
           </section>
 
           <section id="mistakes" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">7. Common Mistakes to Avoid</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">9. Common Mistakes to Avoid</h2>
             <ul className="mt-4 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
               <li>Applying without a valid appraisal report</li>
               <li>Forgetting to include tax returns</li>
@@ -239,13 +271,13 @@ export default function Page({ params }) {
           </section>
 
           <section id="faq" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">8. Frequently Asked Questions (FAQ)</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">10. Frequently Asked Questions (FAQ)</h2>
             <div className="mt-6 space-y-4">
               {[
-                { q: 'Can foreigners apply for a mortgage in Aruba?', a: 'Yes. Both Aruba Bank and RBC Royal Bank offer mortgages for non-residents, usually with a 35–40% down payment.' },
-                { q: 'Do I need to live in Aruba to get a mortgage?', a: "No. You don’t need to be a resident, but banks will require extra documentation like a foreign credit report and proof of income." },
-                { q: 'Can I use my foreign bank account for payments?', a: 'Yes, most banks allow international transfers and USD payments from overseas accounts.' },
-                { q: 'How long does approval take?', a: 'Typically 2–3 weeks once documentation is submitted and verified.' },
+                { q: 'What are Aruba mortgage requirements for non-residents?', a: 'Non-residents typically need a 40–50% down payment, max 15-year term, valid passport, proof of income, two bank reference letters, and an appraisal report. Interest rates are often 5–7%.' },
+                { q: 'Can foreigners apply for a mortgage in Aruba?', a: 'Yes. Aruba Bank, Banco di Caribe, and RBC Royal Bank offer mortgages for non-residents, usually with a 40–50% down payment and max 15-year term.' },
+                { q: 'How long does mortgage approval take in Aruba?', a: 'Pre-approval often takes about 2 weeks. Full approval can take 4–5 weeks for compliance. The full process from application to financing may take around 2 months.' },
+                { q: 'What are the closing costs for an Aruba mortgage?', a: 'Expect roughly 1% of the loan amount in bank fees, plus notary fees (transfer deed and mortgage deed). Total buyer-side costs often add up to 5–12% of the purchase price.' },
                 { q: 'Do I need a local notary?', a: 'Yes. All property transactions must be processed through a local notary.' },
               ].map((item) => (
                 <details key={item.q} className="group rounded-2xl border p-5 bg-white shadow-sm">
@@ -262,12 +294,14 @@ export default function Page({ params }) {
             <h3 className="font-semibold text-foreground">On this page</h3>
             <nav className="mt-4 grid gap-2">
               {[
-                { id: 'req', label: 'Requirements' },
-                { id: 'core', label: 'Core Documents' },
+                { id: 'req', label: 'Non-Resident Requirements' },
+                { id: 'nonresidents', label: 'Key Requirements' },
+                { id: 'core', label: 'Documents Checklist' },
                 { id: 'banks', label: 'By Bank' },
                 { id: 'checklist', label: 'Checklist' },
+                { id: 'construction', label: 'Construction' },
                 { id: 'timelines', label: 'Timelines' },
-                { id: 'terms', label: 'Terms' },
+                { id: 'closing', label: 'Closing Costs' },
                 { id: 'mistakes', label: 'Mistakes' },
                 { id: 'faq', label: 'FAQ' },
               ].map(({ id, label }) => (

@@ -13,8 +13,8 @@ export default function BreadcrumbsClient() {
 		home: isDutch ? 'Home' : 'Home',
 		guides: isDutch ? 'Gidsen' : 'Guides',
 		article: isDutch
-			? 'Kunnen Buitenlanders een Huis Kopen op Aruba? [Gids 2025]'
-			: 'Can Foreigners Buy Property in Aruba? [2025 Guide]',
+			? 'Wat is een Annuïteitenhypotheek in Aruba?'
+			: 'What Is an Annuity Mortgage in Aruba?',
 	};
 
 	const crumbs = [

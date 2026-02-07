@@ -4,13 +4,13 @@ import Breadcrumbs from './BreadcrumbsClient'
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20much%20can%20you%20borrow%20for%20a%20mortgage%20in%20aruba.png'
 
 export const metadata = {
-  title: 'How Much Can I Borrow for a Mortgage in Aruba? [2025 Guide]',
-  description: 'How banks in Aruba calculate your borrowing power. Factors, example calculation, calculator links, tips, and FAQs.',
+  title: 'How Much Can I Borrow for a Mortgage in Aruba? | Limits & Calculator',
+  description: 'Mortgage borrowing in Aruba: residents 90–100% financing, non-residents 50–80%. LTV, income limits (30–35% DTI), loan terms up to 35 years. Aruba Bank, Banco di Caribe, RBC.',
   keywords: [
     'mortgage calculator Aruba',
     'how much can I borrow Aruba',
     'borrowing power Aruba',
-    'Aruba mortgage',
+    'Aruba mortgage LTV',
     'loan calculator Aruba',
     'down payment Aruba',
   ],
@@ -18,7 +18,7 @@ export const metadata = {
     canonical: 'https://onehappyfinance.com/en/aw/guides/how-much-can-you-borrow-in-aruba',
   },
   openGraph: {
-    title: 'How Much Can I Borrow for a Mortgage in Aruba? [2025 Guide]',
+    title: 'How Much Can I Borrow for a Mortgage in Aruba? | Limits & Calculator',
     description: 'Learn how income, age, down payment, and property type affect your borrowing power in Aruba.',
     type: 'article',
     images: [
@@ -44,13 +44,13 @@ function ArticleSchema() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'How Much Can I Borrow for a Mortgage in Aruba? [2025 Guide]',
+    headline: 'How Much Can I Borrow for a Mortgage in Aruba? | Limits & Calculator',
     image: [FEATURED_IMAGE],
-    description: 'Aruba mortgage borrowing power explained with factors, example, tips, and FAQ.',
+    description: 'Mortgage borrowing in Aruba: residents 90–100%, non-residents 50–80%. LTV, income limits, loan terms. Aruba Bank, Banco di Caribe, RBC.',
     author: { '@type': 'Organization', name: 'OneHappyFinance' },
     publisher: { '@type': 'Organization', name: 'OneHappyFinance', logo: { '@type': 'ImageObject', url: FEATURED_IMAGE } },
     datePublished: '2025-10-30',
-    dateModified: '2025-10-30',
+    dateModified: '2026-02-07',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://onehappyfinance.com/en/aw/guides/how-much-can-you-borrow-in-aruba' },
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -58,10 +58,11 @@ function ArticleSchema() {
 
 function FaqSchema() {
   const qa = [
-    { q: 'Can non-residents get a mortgage in Aruba?', a: 'Yes. Banco di Caribe and RBC Royal Bank offer non-resident mortgages, typically with 35–40% down payment.' },
-    { q: 'How do banks determine maximum mortgage?', a: 'Banks assess income, age, existing obligations, down payment, and property type.' },
-    { q: 'What is the difference between maximum loan and monthly payments?', a: 'Maximum loan is a theoretical cap. Your actual monthly payment must fit your budget and bank limits.' },
-    { q: 'Can I increase my mortgage later?', a: 'Some banks allow refinancing or additional loans based on updated financials.' },
+    { q: 'How much can residents borrow for a mortgage in Aruba?', a: 'Residents can often finance up to 90–100% of property value through institutions like AHI or RBC, depending on location and profile.' },
+    { q: 'How much can non-residents borrow in Aruba?', a: 'Non-residents typically get 50–80% financing, requiring a 20–50% down payment. Some banks limit LTV to around 60% for foreign investment.' },
+    { q: 'What income limit do Aruba banks use for mortgages?', a: 'Monthly mortgage payments are usually limited to 30–35% of net income.' },
+    { q: 'What are typical Aruba mortgage rates and terms?', a: 'Rates often start around 5–5.08%. Loan terms are typically 15–30 years, often with repayment required before retirement age.' },
+    { q: 'Can I increase my mortgage later?', a: 'Refinancing or additional loans may be possible depending on the bank and your profile.' },
   ];
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -86,8 +87,8 @@ export default function Page({ params }) {
         </div>
         <div className="relative p-6 md:p-10">
           <span className="inline-block text-xs tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">Mortgages</span>
-          <h1 className="mt-4 font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">How Much Can You Borrow for a Mortgage in Aruba? [2025 Guide]</h1>
-          <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">How banks calculate borrowing power in Aruba, with a clear example, calculator links, and tips.</p>
+          <h1 className="mt-4 font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">How Much Can I Borrow for a Mortgage in Aruba?</h1>
+          <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">Residents can often finance 90–100%; non-residents typically 50–80%. Loan terms up to 35 years. Income limit 30–35% of net. Aruba Bank, Banco di Caribe, RBC.</p>
           <Breadcrumbs />
         </div>
       </section>
@@ -95,20 +96,44 @@ export default function Page({ params }) {
       {/* GRID */}
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
         <div className="lg:col-span-8 space-y-10">
+          <section id="limits" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1) Key Borrowing Factors and Limits</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Mortgage borrowing in Aruba varies by residency. Residents can often finance up to 90–100% of a property&apos;s value; non-residents are usually limited to 50–80% financing, requiring a 20–50% down payment. Loan terms can reach up to 35 years, with debt servicing generally limited to 30–35% of net income.</p>
+            <div className="mt-5 overflow-x-auto rounded-2xl border bg-white shadow-sm">
+              <table className="min-w-full text-sm">
+                <thead className="bg-gray-50">
+                  <tr>
+                    <th className="text-left p-3 font-semibold">Factor</th>
+                    <th className="text-left p-3 font-semibold">Typical Range</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y text-foreground/80">
+                  <tr><td className="p-3">Residents</td><td className="p-3">Up to 100% financing (AHI); RBC offers 90–95% depending on location</td></tr>
+                  <tr><td className="p-3">Non-residents</td><td className="p-3">50–80% financing; 20–50% down payment required</td></tr>
+                  <tr><td className="p-3">Loan-to-Value (LTV)</td><td className="p-3">Some banks limit to ~60% of appraised value for foreign investment; 40–50% down</td></tr>
+                  <tr><td className="p-3">Income limit</td><td className="p-3">Monthly mortgage payments usually cannot exceed 30–35% of net income</td></tr>
+                  <tr><td className="p-3">Loan terms</td><td className="p-3">15–30 years, often repaid before retirement age</td></tr>
+                  <tr><td className="p-3">Interest rates</td><td className="p-3">Often start around 5% to 5.08%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Pre-approval is strongly recommended. Work with local institutions like Aruba Bank, Banco di Caribe, or RBC Royal Bank to determine your specific borrowing capacity based on income, age, and property type.</p>
+          </section>
+
           <section id="factors" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1) Factors That Determine How Much You Can Borrow</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2) Factors That Determine How Much You Can Borrow</h2>
             <p className="mt-4 text-foreground/80 leading-7">Aruban lenders consider age, income, down payment, existing obligations, and property type/value.</p>
             <ul className="mt-3 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
-              <li><span className="font-semibold">Age at end of term</span> — maximum age often 65–70 at maturity.</li>
+              <li><span className="font-semibold">Age at end of term</span> — maximum age often 65–70 at maturity; loan repaid before retirement.</li>
               <li><span className="font-semibold">Salary and income</span> — payslips; self-employed provide financials/tax returns.</li>
-              <li><span className="font-semibold">Down payment</span> — residents ~10–25%; non-residents ~35–40%.</li>
+              <li><span className="font-semibold">Down payment</span> — residents often 10–25%; non-residents typically 20–50%.</li>
               <li><span className="font-semibold">Existing obligations</span> — loans, cards, other monthly debts.</li>
-              <li><span className="font-semibold">Property type and value</span> — LTV caps typically 65–90%.</li>
+              <li><span className="font-semibold">Property type and value</span> — LTV caps vary; residents up to 90–100%, non-residents 50–80%.</li>
             </ul>
           </section>
 
           <section id="example" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2) Example Calculation of Borrowing Power</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3) Example Calculation of Borrowing Power</h2>
             <p className="mt-4 text-foreground/80 leading-7">Resident example: salary USD 3,500 monthly; target purchase USD 400,000.</p>
             <ul className="mt-2 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
               <li>Down payment: 10% = USD 40,000</li>
@@ -125,12 +150,12 @@ export default function Page({ params }) {
           </section>
 
           <section id="calculator" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3) Use a Mortgage Calculator</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4) Use a Mortgage Calculator</h2>
             <p className="mt-4 text-foreground/80 leading-7">Use an online mortgage calculator to estimate your maximum loan and monthly payment. Enter your income, interest rate, term, and down payment to see how each factor changes your borrowing power. If you do not have a preferred calculator, search for “mortgage calculator” and choose a reputable tool that supports annuity payments.</p>
           </section>
 
           <section id="tips" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4) Tips to Increase Your Borrowing Capacity</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5) Tips to Increase Your Borrowing Capacity</h2>
             <ul className="mt-4 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
               <li>Reduce existing debts before applying.</li>
               <li>Increase your down payment to lower bank risk.</li>
@@ -140,13 +165,14 @@ export default function Page({ params }) {
           </section>
 
           <section id="faq" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5) Frequently Asked Questions (FAQ)</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6) Frequently Asked Questions (FAQ)</h2>
             <div className="mt-6 space-y-4">
               {[
-                { q: 'Can non-residents get a mortgage in Aruba?', a: 'Yes. Banco di Caribe and RBC Royal Bank offer non-resident options, often with 35–40% down payment.' },
-                { q: 'How do banks determine my maximum?', a: 'Based on income, age, obligations, down payment, and property type/value.' },
-                { q: 'Maximum loan vs monthly payment?', a: 'A maximum is a cap; monthly payments must still be affordable and within bank ratios.' },
-                { q: 'Can I increase the mortgage later?', a: 'Refinancing or additional loans may be possible depending on the bank and your profile.' },
+                { q: 'How much can residents borrow for a mortgage in Aruba?', a: 'Residents can often finance up to 90–100% of property value through institutions like AHI or RBC, depending on location and profile.' },
+                { q: 'How much can non-residents borrow in Aruba?', a: 'Non-residents typically get 50–80% financing, requiring a 20–50% down payment. Some banks limit LTV to around 60% for foreign investment.' },
+                { q: 'What income limit do Aruba banks use for mortgages?', a: 'Monthly mortgage payments are usually limited to 30–35% of net income.' },
+                { q: 'What are typical Aruba mortgage rates and terms?', a: 'Rates often start around 5–5.08%. Loan terms are typically 15–30 years, often with repayment required before retirement age.' },
+                { q: 'Can I increase my mortgage later?', a: 'Refinancing or additional loans may be possible depending on the bank and your profile.' },
               ].map((item) => (
                 <details key={item.q} className="group rounded-2xl border p-5 bg-white shadow-sm">
                   <summary className="cursor-pointer font-semibold text-foreground">{item.q}</summary>
@@ -162,9 +188,10 @@ export default function Page({ params }) {
             <h3 className="font-semibold text-foreground">On this page</h3>
             <nav className="mt-4 grid gap-2">
               {[
-                { id: 'factors', label: 'Key factors' },
+                { id: 'limits', label: 'Key limits' },
+                { id: 'factors', label: 'Factors' },
                 { id: 'example', label: 'Example' },
-                { id: 'calculator', label: 'Mortgage calculator' },
+                { id: 'calculator', label: 'Calculator' },
                 { id: 'tips', label: 'Tips' },
                 { id: 'faq', label: 'FAQ' },
               ].map(({ id, label }) => (

@@ -4,14 +4,22 @@ import Breadcrumbs from './BreadcrumbsClient'
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20to%20Get%20a%20Mortgage%20in%20Aruba.png'
 
 export const metadata = {
-  title: 'How to Get a Mortgage in Aruba: Step-by-Step Guide',
-  description: 'Learn how to get a mortgage in Aruba with this step-by-step guide. Understand requirements, documents, lenders, costs, and timelines to finance property on the island.',
+  title: 'How to Get a Mortgage in Aruba: Rates, Requirements & Step-by-Step Guide',
+  description: 'Aruba mortgage rates, requirements, documents, and timelines. Step-by-step guide for residents and non-residents. Compare lenders, understand costs, and get pre-approved.',
+  keywords: [
+    'aruba mortgage rates',
+    'mortgage rates Aruba',
+    'how to get a mortgage in Aruba',
+    'Aruba mortgage',
+    'Aruba home loan',
+    'mortgage Aruba requirements',
+  ],
   alternates: {
     canonical: 'https://onehappyfinance.com/en/aw/guides/how-to-get-a-mortgage-in-aruba',
   },
   openGraph: {
-    title: 'How to Get a Mortgage in Aruba: Step-by-Step Guide',
-    description: 'Requirements, documents, lenders, costs, and timelines to finance property in Aruba.',
+    title: 'How to Get a Mortgage in Aruba: Rates, Requirements & Step-by-Step Guide',
+    description: 'Aruba mortgage rates, requirements, documents, and timelines. Step-by-step guide for residents and non-residents.',
     type: 'article',
     images: [
       {
@@ -44,7 +52,7 @@ function BreadcrumbSchema({ locale }) {
       {
         '@type': 'ListItem',
         position: 3,
-        name: 'How to Get a Mortgage in Aruba',
+        name: 'How to Get a Mortgage in Aruba: Rates, Requirements & Guide',
         item: `https://onehappyfinance.com/${locale}/aw/guides/how-to-get-a-mortgage-in-aruba`,
       },
     ],
@@ -62,10 +70,12 @@ function ArticleSchema() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'How to Get a Mortgage in Aruba: Step-by-Step Guide',
+    headline: 'How to Get a Mortgage in Aruba: Rates, Requirements & Step-by-Step Guide',
     image: [FEATURED_IMAGE],
     description:
-      'Learn how to get a mortgage in Aruba with this step-by-step guide. Understand requirements, documents, lenders, costs, and timelines to finance property on the island.',
+      'Aruba mortgage rates, requirements, documents, and timelines. Step-by-step guide for residents and non-residents to finance property on the island.',
+    datePublished: '2025-10-30',
+    dateModified: '2025-10-30',
     author: {
       '@type': 'Organization',
       name: 'OneHappyFinance',
@@ -97,6 +107,15 @@ function FaqSchema() {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What are mortgage rates in Aruba?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            'Mortgage rates in Aruba follow global interest rate benchmarks (such as US Fed and ECB rates) and vary by bank. Rates depend on down payment, loan-to-value ratio, residency status, and loan term. Banks typically offer both fixed-rate and variable-rate mortgages.',
+        },
+      },
       {
         '@type': 'Question',
         name: 'Can foreigners get a mortgage in Aruba?',
@@ -185,10 +204,10 @@ export default function Page({ params }) {
         <div className="relative p-6 md:p-10">
           <span className="inline-block text-xs tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">Guides</span>
           <h1 className="mt-4 font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">
-            How to Get a Mortgage in Aruba: Step-by-Step Guide
+            How to Get a Mortgage in Aruba: Rates, Requirements & Step-by-Step Guide
           </h1>
           <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">
-            A practical guide to requirements, lenders, documents, costs, and timelines to finance property on the island.
+            A practical guide to Aruba mortgage rates, requirements, lenders, documents, costs, and timelines to finance property on the island.
           </p>
           <Breadcrumbs />
         </div>
@@ -205,16 +224,38 @@ export default function Page({ params }) {
             <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">Overview</h2>
             <div className="mt-4 space-y-4 text-foreground/80 leading-7 md:leading-8">
               <p>
-                Aruba’s mortgage market is competitive, reliable, and accessible to residents and non-residents alike. The
-                process becomes straightforward when you understand the expectations: down payment, documentation,
+                Aruba’s mortgage market is competitive, reliable, and accessible to residents and non-residents alike.
+                Aruba mortgage rates follow global benchmarks and are set by local banks based on market conditions.
+                The process becomes straightforward when you understand the expectations: rates, down payment, documentation,
                 affordability, and the legal steps from purchase agreement to transfer at the notary.
               </p>
             </div>
           </section>
 
+          {/* SECTION: Mortgage Rates */}
+          <section id="rates" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">Aruba Mortgage Rates: What to Expect</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">
+              Mortgage rates in Aruba are influenced by international interest rates, central bank policy, and local market conditions.
+              Banks typically offer both fixed-rate and variable-rate mortgages. Fixed rates lock in your rate for a set period
+              (often 5–10 years), providing stability, while variable rates can adjust periodically.
+            </p>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">
+              Your Aruba mortgage rate depends on several factors: down payment size, loan-to-value ratio, residency status,
+              credit profile, and loan term. Residents and buyers with larger down payments often qualify for better rates.
+              Non-residents may face slightly higher rates due to additional risk considerations.
+            </p>
+            <ul className="mt-4 grid md:grid-cols-2 gap-2 list-disc pl-5 text-foreground/80 leading-7">
+              <li>Rates follow global benchmarks (e.g. US Fed, ECB)</li>
+              <li>Fixed vs variable rate options available</li>
+              <li>Compare rates across Aruba Bank, RBC, and other lenders</li>
+              <li>Pre-approval gives you a rate indication before you buy</li>
+            </ul>
+          </section>
+
           {/* SECTION: Basics */}
           <section id="basics" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1) Mortgage Basics in Aruba</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2) Mortgage Basics in Aruba</h2>
             <p className="mt-4 text-foreground/80 leading-7 md:leading-8">
               Banks will assess your debt-to-income ratio, verify employment and income stability, and require a property appraisal.
               Non-residents often encounter lower LTV caps and higher down payment requirements.
@@ -229,7 +270,7 @@ export default function Page({ params }) {
 
           {/* SECTION: Documents */}
           <section id="documents" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2) Required Documents</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3) Required Documents</h2>
             <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Provide a clean, complete package to accelerate approval.</p>
             <div className="mt-5 rounded-2xl border p-5 bg-white shadow-sm">
               <ul className="grid md:grid-cols-2 gap-3 list-disc pl-5 text-foreground/80 leading-7">
@@ -245,7 +286,7 @@ export default function Page({ params }) {
 
           {/* SECTION: Pre-Approval */}
           <section id="preapproval" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3) Getting Pre-Approved</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4) Getting Pre-Approved</h2>
             <p className="mt-4 text-foreground/80 leading-7 md:leading-8">
               Pre-approval helps define your budget and strengthens any offer. Provide income and asset proofs and request a
               bank letter indicating maximum loan amount and indicative rate/term.
@@ -254,7 +295,7 @@ export default function Page({ params }) {
 
           {/* SECTION: Lenders */}
           <section id="lenders" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4) Choosing a Lender</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5) Choosing a Lender</h2>
             <p className="mt-4 text-foreground/80 leading-7 md:leading-8">
               Compare beyond the headline rate. Look closely at fees, prepayment rules, required insurances, and foreign
               currency handling if you earn outside Aruba.
@@ -283,7 +324,7 @@ export default function Page({ params }) {
 
           {/* SECTION: Costs */}
           <section id="costs" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5) Costs & Timelines</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6) Costs & Timelines</h2>
             <p className="mt-4 text-foreground/80 leading-7 md:leading-8">
               Plan for one-time closing costs (notary, transfer taxes, appraisal) and recurring costs (insurance, property taxes,
               HOA where applicable). With a complete file, approval often takes 2–6 weeks.
@@ -292,7 +333,7 @@ export default function Page({ params }) {
 
           {/* SECTION: Closing */}
           <section id="closing" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6) From Offer to Ownership</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">7) From Offer to Ownership</h2>
             <ol className="mt-4 list-decimal pl-5 text-foreground/80 leading-7 space-y-1">
               <li>Offer accepted and purchase agreement signed</li>
               <li>Bank final approval and conditions fulfilled</li>
@@ -327,6 +368,17 @@ export default function Page({ params }) {
           <section id="faq" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
             <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">Frequently Asked Questions</h2>
             <div className="mt-6 space-y-4">
+              <details className="group rounded-2xl border p-5 bg-white shadow-sm">
+                <summary className="cursor-pointer font-semibold text-foreground flex items-center justify-between">
+                  What are mortgage rates in Aruba?
+                </summary>
+                <p className="mt-3 text-foreground/80 leading-7">
+                  Mortgage rates in Aruba follow global interest rate benchmarks (such as US Fed and ECB rates) and vary by bank.
+                  Rates depend on down payment, loan-to-value ratio, residency status, and loan term.
+                  Banks typically offer both fixed-rate and variable-rate mortgages.
+                </p>
+              </details>
+
               <details className="group rounded-2xl border p-5 bg-white shadow-sm">
                 <summary className="cursor-pointer font-semibold text-foreground flex items-center justify-between">
                   Can foreigners get a mortgage in Aruba?
@@ -395,6 +447,7 @@ export default function Page({ params }) {
             <nav className="mt-4 grid gap-2">
               {[
                 { id: 'overview', label: 'Overview' },
+                { id: 'rates', label: 'Aruba Mortgage Rates' },
                 { id: 'basics', label: 'Mortgage Basics in Aruba' },
                 { id: 'documents', label: 'Required Documents' },
                 { id: 'preapproval', label: 'Getting Pre-Approved' },

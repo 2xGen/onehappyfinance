@@ -13,8 +13,8 @@ export default function BreadcrumbsClient() {
     home: isDutch ? 'Home' : 'Home',
     guides: isDutch ? 'Gidsen' : 'Guides',
     article: isDutch
-      ? 'Wat is een Annuïteitenhypotheek in Aruba?'
-      : 'What Is an Annuity Mortgage in Aruba?',
+      ? 'Gezondheids- en Autoverzekering in Aruba'
+      : 'Health & Car Insurance in Aruba',
   };
 
   const crumbs = [

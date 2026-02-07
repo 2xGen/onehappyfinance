@@ -50,24 +50,36 @@ export const localizedSlugPairs = [
     nl: '/aw/guides/hypotheek-in-aruba-complete-gids-voor-inwoners-en-niet-inwoners',
   },
   {
-    en: '/aw/guides/can-foreigners-buy-property-in-aruba-2025-guide',
-    nl: '/aw/guides/kunnen-buitenlanders-een-huis-kopen-op-aruba-gids-2025',
+    en: '/aw/guides/can-foreigners-buy-property-in-aruba',
+    nl: '/aw/guides/kunnen-buitenlanders-een-huis-kopen-op-aruba',
   },
   {
-    en: '/aw/guides/mortgage-requirements-in-aruba-2025-guide',
-    nl: '/aw/guides/hypotheek-vereisten-in-aruba-2025-gids',
+    en: '/aw/guides/mortgage-requirements-in-aruba',
+    nl: '/aw/guides/hypotheek-vereisten-in-aruba',
   },
   {
     en: '/aw/guides/what-is-an-annuity-mortgage-in-aruba',
-    nl: '/aw/guides/wat-is-een-annuiteitenhypotheek-in-aruba-2025-gids',
+    nl: '/aw/guides/wat-is-een-annuiteitenhypotheek-in-aruba',
   },
   {
     en: '/aw/guides/how-much-can-you-borrow-in-aruba',
-    nl: '/aw/guides/hoeveel-kun-je-lenen-in-aruba-2025-gids',
+    nl: '/aw/guides/hoeveel-kun-je-lenen-in-aruba',
   },
   {
     en: '/aw/guides/freehold-vs-lease-land-in-aruba',
-    nl: '/aw/guides/eigendom-vs-erfpacht-in-aruba-2025-gids',
+    nl: '/aw/guides/eigendom-vs-erfpacht-in-aruba',
+  },
+  {
+    en: '/aw/guides/understanding-insurance-in-aruba',
+    nl: '/aw/guides/verzekering-in-aruba-begrijpen',
+  },
+  {
+    en: '/aw/guides/health-car-insurance-aruba-guide',
+    nl: '/aw/guides/gezondheids-en-autoverzekering-aruba-gids',
+  },
+  {
+    en: '/aw/guides/insurance-aruba-tips-for-new-residents',
+    nl: '/aw/guides/verzekering-aruba-tips-voor-nieuwe-inwoners',
   },
 ];
 

@@ -13,6 +13,7 @@ export async function generateMetadata({ params }) {
   const locale = resolvedParams?.locale || defaultLocale;
   
   return {
+    robots: { index: true, follow: true },
     title: {
       default: 'OneHappyFinance - Financial Guidance for Aruba',
       template: '%s | OneHappyFinance'

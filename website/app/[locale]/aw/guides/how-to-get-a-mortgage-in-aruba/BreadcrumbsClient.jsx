@@ -13,7 +13,7 @@ export default function BreadcrumbsClient() {
 		home: isDutch ? 'Home' : 'Home',
 		guides: isDutch ? 'Gidsen' : 'Guides',
 		article: isDutch
-			? 'Hypotheek in Aruba: Complete Gids voor Inwoners en Niet-Inwoners'
+			? 'Hypotheek Aruba: Rentes, Voorwaarden & Stappen'
 			: 'How to Get a Mortgage in Aruba',
 	};
 

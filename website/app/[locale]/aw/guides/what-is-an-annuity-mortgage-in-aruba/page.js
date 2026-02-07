@@ -4,20 +4,22 @@ import Breadcrumbs from './BreadcrumbsClient'
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/What%20Is%20an%20Annuity%20Mortgage%20and%20How%20Does%20It%20Work%20in%20Aruba.png'
 
 export const metadata = {
-  title: 'What Is an Annuity Mortgage in Aruba? | How It Works (2025 Guide)',
-  description: 'Understand annuity mortgages in Aruba: how payments work, pros & cons, eligibility, example calculation, and FAQs.',
+  title: 'What Is an Annuity Mortgage in Aruba? | How It Works, Pros & Cons',
+  description: 'Annuity mortgage in Aruba: fixed monthly payments, interest deduction in early years, annuity vs life mortgage. Aruba Bank, ENNIA, RBC. Term up to 30 years or age 62.',
   keywords: [
     'annuity mortgage Aruba',
+    'Aruba annuity mortgage',
     'Aruba mortgage types',
     'how annuity mortgage works Aruba',
-    'Aruba home loan annuity',
+    'Aruba Bank annuity mortgage',
+    'ENNIA annuity mortgage',
   ],
   alternates: {
     canonical: 'https://onehappyfinance.com/en/aw/guides/what-is-an-annuity-mortgage-in-aruba',
   },
   openGraph: {
-    title: 'What Is an Annuity Mortgage in Aruba? | How It Works (2025 Guide)',
-    description: 'A clear guide to annuity mortgages in Aruba with examples and FAQs.',
+    title: 'What Is an Annuity Mortgage in Aruba? | How It Works, Pros & Cons',
+    description: 'Fixed monthly payments, interest deduction in early years, annuity vs life mortgage. Aruba Bank, ENNIA, RBC.',
     type: 'article',
     images: [
       { url: FEATURED_IMAGE, width: 1200, height: 630, alt: 'Annuity Mortgage in Aruba' },
@@ -42,13 +44,13 @@ function ArticleSchema() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'What Is an Annuity Mortgage in Aruba? | How It Works (2025 Guide)',
+    headline: 'What Is an Annuity Mortgage in Aruba? | How It Works, Pros & Cons',
     image: [FEATURED_IMAGE],
-    description: 'Understand annuity mortgages in Aruba: how payments work, pros & cons, eligibility, example calculation, and FAQs.',
+    description: 'Annuity mortgage in Aruba: fixed monthly payments, interest deduction in early years, annuity vs life mortgage. Aruba Bank, ENNIA, RBC.',
     author: { '@type': 'Organization', name: 'OneHappyFinance' },
     publisher: { '@type': 'Organization', name: 'OneHappyFinance', logo: { '@type': 'ImageObject', url: FEATURED_IMAGE } },
     datePublished: '2025-10-30',
-    dateModified: '2025-10-30',
+    dateModified: '2026-02-07',
     mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://onehappyfinance.com/en/aw/guides/what-is-an-annuity-mortgage-in-aruba' },
   }
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -56,10 +58,11 @@ function ArticleSchema() {
 
 function FaqSchema() {
   const qa = [
-    { q: 'Is an annuity mortgage common in Aruba?', a: 'Yes. It is one of the most common structures offered by major lenders like Aruba Bank and RBC.' },
-    { q: 'Do payments change over time?', a: 'The total monthly payment stays the same, but the interest portion decreases and principal increases over time.' },
-    { q: 'Can non-residents get an annuity mortgage?', a: 'Yes, subject to higher down payment and documentation requirements.' },
-    { q: 'What currencies are used?', a: 'USD and AWG are both commonly used. Check your lender’s terms.' },
+    { q: 'What is an annuity mortgage in Aruba?', a: 'An annuity mortgage offers fixed monthly payments of principal plus interest. As the outstanding balance decreases, the interest portion falls and the principal portion rises, while the total payment stays the same.' },
+    { q: 'Is an annuity mortgage common in Aruba?', a: 'Yes. It is the most common mortgage type offered by Aruba Bank, ENNIA, and RBC Royal Bank.' },
+    { q: 'What is the difference between annuity and life mortgage in Aruba?', a: 'Annuity: fixed monthly principal plus interest. Life: interest-only payments, with life insurance to save for the principal, repaid at maturity. Life mortgages often offer maximum tax benefit.' },
+    { q: 'What is the maximum term for an Aruba annuity mortgage?', a: 'Typically up to 30 years or until age 62, whichever comes first.' },
+    { q: 'What expenses are related to an Aruba mortgage?', a: 'Closing fees, notary costs, transfer taxes (3% up to AWG 250,000; 6% above that), and insurance premiums.' },
   ];
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -85,7 +88,7 @@ export default function Page({ params }) {
         <div className="relative p-6 md:p-10">
           <span className="inline-block text-xs tracking-widest uppercase text-primary bg-primary/10 px-3 py-1 rounded-full">Mortgages</span>
           <h1 className="mt-4 font-heading text-4xl md:text-5xl font-bold leading-tight text-foreground">What Is an Annuity Mortgage and How Does It Work in Aruba?</h1>
-          <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">A clear explanation of how annuity mortgages work in Aruba, with pros & cons and a simple example.</p>
+          <p className="mt-3 text-base md:text-lg text-foreground/80 leading-7 md:leading-8 max-w-3xl">Fixed monthly payments, interest deduction in early years, annuity vs life mortgage. Aruba Bank, ENNIA, RBC. Term up to 30 years or age 62.</p>
           <Breadcrumbs />
         </div>
       </section>
@@ -94,49 +97,77 @@ export default function Page({ params }) {
       <div className="mt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10">
         <div className="lg:col-span-8 space-y-10">
           <section id="what" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1) What Is an Annuity Mortgage?</h2>
-            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">An annuity mortgage is a loan where you repay with a fixed total monthly payment. Early on, payments are mostly interest; over time, the principal share grows while interest shrinks. The total payment stays constant, making budgeting predictable.</p>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">1) What Is an Annuity Mortgage in Aruba?</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">The annuity mortgage is the most common type of mortgage loan in Aruba. It offers a fixed monthly payment for a fixed period. Each payment consists of principal and interest; interest is calculated on the outstanding balance. As the balance reduces, the interest portion shrinks and the principal portion grows, while the total monthly payment stays the same.</p>
           </section>
 
           <section id="how" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2) How Do Payments Work in Aruba?</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">2) How Do Payments Work?</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">In the early years, you benefit from a higher interest deduction, so your net costs start relatively low. Later in the term, as the interest portion decreases, your net monthly payments rise. The gross monthly payment, however, stays nearly the same throughout the loan.</p>
             <ul className="mt-4 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
-              <li>Fixed total monthly payment over the term (annuity structure).</li>
-              <li>Interest portion declines each month as the outstanding balance decreases.</li>
-              <li>Principal portion rises, accelerating equity build-up.</li>
-              <li>Typically offered in USD or AWG; terms up to 30 years for residents.</li>
+              <li>Fixed total monthly payment over the term</li>
+              <li>Interest calculated on outstanding balance</li>
+              <li>Principal share rises as balance falls; interest share falls</li>
+              <li>Typically offered in USD or AWG; terms up to 30 years or age 62</li>
             </ul>
           </section>
 
+          <section id="types" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3) Annuity vs Life Mortgage in Aruba</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Aruban banks typically offer two main mortgage types. Understanding both helps you choose the right fit.</p>
+            <div className="mt-5 grid md:grid-cols-2 gap-4">
+              <div className="rounded-2xl border p-5 bg-white shadow-sm">
+                <h3 className="m-0 font-semibold">Annuity Mortgage</h3>
+                <p className="mt-2 text-foreground/80 leading-7">Fixed monthly payment of principal plus interest. As the balance reduces, interest falls and principal rises. The most common type—predictable and straightforward.</p>
+              </div>
+              <div className="rounded-2xl border p-5 bg-white shadow-sm">
+                <h3 className="m-0 font-semibold">Life Mortgage</h3>
+                <p className="mt-2 text-foreground/80 leading-7">During the term you pay interest only. You take out life insurance to save for the principal, which is repaid at maturity. This type often offers maximum tax benefit over the life of the loan.</p>
+              </div>
+            </div>
+          </section>
+
           <section id="proscons" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">3) Pros and Cons</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4) Why Choose an Annuity Mortgage?</h2>
             <div className="grid md:grid-cols-2 gap-4 mt-4">
               <div className="rounded-2xl border p-5 bg-white shadow-sm">
-                <h3 className="m-0 font-semibold">Pros</h3>
+                <h3 className="m-0 font-semibold">Benefits</h3>
                 <ul className="mt-2 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
-                  <li>Predictable monthly payment simplifies budgeting.</li>
-                  <li>Principal increases over time, building equity faster later.</li>
-                  <li>Common product — easy to compare across banks.</li>
+                  <li><strong>Predictability:</strong> Fixed monthly payments so you know what to expect</li>
+                  <li><strong>Lower initial costs:</strong> Higher interest deduction in early years lowers net costs at the start</li>
+                  <li><strong>Competitive rates:</strong> Many Aruban lenders offer competitive annuity mortgage rates</li>
+                  <li><strong>Flexible terms:</strong> Choose repayment periods that fit your situation</li>
                 </ul>
               </div>
               <div className="rounded-2xl border p-5 bg-white shadow-sm">
-                <h3 className="m-0 font-semibold">Cons</h3>
+                <h3 className="m-0 font-semibold">Things to Consider</h3>
                 <ul className="mt-2 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
-                  <li>You pay more interest in the early years.</li>
-                  <li>Fixed payments can be higher than interest-only initially.</li>
-                  <li>Prepayment penalties can apply — always confirm with your lender.</li>
+                  <li>Net monthly payments rise over time as the interest portion falls</li>
+                  <li>Fixed payments can be higher than interest-only products initially</li>
+                  <li>Prepayment penalties may apply—confirm with your lender</li>
                 </ul>
               </div>
             </div>
           </section>
 
+          <section id="costs" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5) What Does an Annuity Mortgage Cost?</h2>
+            <p className="mt-4 text-foreground/80 leading-7 md:leading-8">Your monthly payment depends on the interest rate and loan amount. Mortgage advisors can help you explore the best options for your situation. Besides the monthly payment, plan for these expenses:</p>
+            <ul className="mt-4 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
+              <li>Closing fee</li>
+              <li>Notary costs</li>
+              <li>Transfer taxes: 3% for amounts up to AWG 250,000; 6% for amounts above that</li>
+              <li>Insurance premiums</li>
+            </ul>
+          </section>
+
           <section id="eligibility" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">4) Who Is Eligible?</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6) Who Is Eligible?</h2>
             <p className="mt-4 text-foreground/80 leading-7">Banks in Aruba assess income, credit history, debt-to-income ratio (often ≤ 40%), down payment, and property appraisal. Non-residents can qualify with higher down payments (often 35–40%) and additional documentation.</p>
           </section>
 
           <section id="example" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">5) Example: Simple Annuity Payment</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">7) Example: Simple Annuity Payment</h2>
             <p className="mt-4 text-foreground/80 leading-7">Example with approximate numbers for illustration only:</p>
             <ul className="mt-2 list-disc pl-5 text-foreground/80 leading-7 space-y-1">
               <li>Loan amount: USD 300,000</li>
@@ -147,12 +178,14 @@ export default function Page({ params }) {
           </section>
 
           <section id="faq" className="rounded-3xl border bg-white/80 backdrop-blur p-6 md:p-8 shadow-sm">
-            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">6) FAQs</h2>
+            <h2 className="font-heading text-2xl md:text-3xl font-semibold tracking-tight">8) FAQs</h2>
             <div className="mt-6 space-y-4">
               {[
-                { q: 'Can I make extra payments?', a: 'Usually yes, but prepayment terms vary by bank. Ask about penalties or annual free prepayment allowances.' },
-                { q: 'Are rates fixed or variable?', a: 'Both exist. Many annuity mortgages are fixed for a period, then reset. Always confirm your product type.' },
-                { q: 'Which banks offer annuity mortgages?', a: 'Major lenders like Aruba Bank and RBC Royal Bank offer them; terms differ for residents and non-residents.' },
+                { q: 'What is an annuity mortgage in Aruba?', a: 'An annuity mortgage offers fixed monthly payments of principal plus interest. As the outstanding balance decreases, the interest portion falls and the principal portion rises, while the total payment stays the same.' },
+                { q: 'What is the difference between annuity and life mortgage?', a: 'Annuity: fixed monthly principal plus interest. Life: interest-only payments, with life insurance to save for the principal, repaid at maturity. Life mortgages often offer maximum tax benefit.' },
+                { q: 'What is the maximum term for an Aruba annuity mortgage?', a: 'Typically up to 30 years or until age 62, whichever comes first.' },
+                { q: 'Which banks offer annuity mortgages in Aruba?', a: 'Aruba Bank, ENNIA, and RBC Royal Bank offer annuity mortgages. Terms differ for residents and non-residents.' },
+                { q: 'What expenses are related to an Aruba mortgage?', a: 'Closing fees, notary costs, transfer taxes (3% up to AWG 250,000; 6% above that), and insurance premiums.' },
               ].map((item) => (
                 <details key={item.q} className="group rounded-2xl border p-5 bg-white shadow-sm">
                   <summary className="cursor-pointer font-semibold text-foreground">{item.q}</summary>
@@ -170,7 +203,9 @@ export default function Page({ params }) {
               {[
                 { id: 'what', label: 'What is it?' },
                 { id: 'how', label: 'How payments work' },
-                { id: 'proscons', label: 'Pros & Cons' },
+                { id: 'types', label: 'Annuity vs Life' },
+                { id: 'proscons', label: 'Why choose it' },
+                { id: 'costs', label: 'Costs' },
                 { id: 'eligibility', label: 'Eligibility' },
                 { id: 'example', label: 'Example' },
                 { id: 'faq', label: 'FAQs' },

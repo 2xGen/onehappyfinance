@@ -32,7 +32,7 @@ const FeaturedGuides = () => {
             category: 'Hypotheken',
             imgAlt: 'Kunnen Buitenlanders een Huis Kopen op Aruba?',
             image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Can%20Foreigners%20Buy%20Property%20in%20Aruba.png',
-            link: `/${locale}/aw/guides/kunnen-buitenlanders-een-huis-kopen-op-aruba-gids-2025`,
+            link: `/${locale}/aw/guides/kunnen-buitenlanders-een-huis-kopen-op-aruba`,
           },
           {
             title: 'Eigendom vs. Erfpacht in Aruba',
@@ -40,7 +40,7 @@ const FeaturedGuides = () => {
             category: 'Hypotheken',
             imgAlt: 'Eigendom vs. Erfpacht in Aruba',
             image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Freehold%20vs.%20Lease%20Land%20in%20Aruba.png',
-            link: `/${locale}/aw/guides/eigendom-vs-erfpacht-in-aruba-2025-gids`,
+            link: `/${locale}/aw/guides/eigendom-vs-erfpacht-in-aruba`,
           },
         ]
       : [
@@ -56,7 +56,7 @@ const FeaturedGuides = () => {
             title: 'Can Foreigners Buy Property in Aruba?',
             excerpt: 'Freehold vs lease land, process, costs, and financing for non-residents.',
             category: 'Mortgages',
-            link: '/aw/guides/can-foreigners-buy-property-in-aruba-2025-guide',
+            link: '/aw/guides/can-foreigners-buy-property-in-aruba',
             image: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Can%20Foreigners%20Buy%20Property%20in%20Aruba.png',
             imgAlt: 'Can Foreigners Buy Property in Aruba'
           },

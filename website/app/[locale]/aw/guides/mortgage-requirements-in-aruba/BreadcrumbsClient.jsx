@@ -13,8 +13,8 @@ export default function BreadcrumbsClient() {
 		home: isDutch ? 'Home' : 'Home',
 		guides: isDutch ? 'Gidsen' : 'Guides',
 		article: isDutch
-			? 'Hypotheek Vereisten in Aruba (2025)'
-			: 'Mortgage Requirements in Aruba (2025)',
+			? 'Hypotheekvereisten op Aruba voor Niet-Inwoners'
+			: 'Aruba Mortgage Requirements for Non-Residents',
 	};
 
 	const crumbs = [

@@ -15,6 +15,11 @@ const poppins = Poppins({
 })
 
 export const metadata = {
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   title: {
     default: 'OneHappyFinance - Financial Guidance for Aruba',
     template: '%s | OneHappyFinance'
