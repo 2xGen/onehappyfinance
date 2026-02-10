@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Home",
-    "guides": "Guides"
+    "guides": "Guides",
+    "about": "About Us"
   },
   "hero": {
     "title": "Your Trusted Guide to",
@@ -61,7 +62,14 @@
   "footer": {
     "tagline": "Your trusted source for financial clarity in Aruba.",
     "disclaimer": "Information only – we are not a financial institution or mortgage provider. All content is for informational purposes and does not constitute financial advice.",
-    "copyright": "OneHappyFinance.com. All Rights Reserved."
+    "copyright": "OneHappyFinance.com. All Rights Reserved.",
+    "cookiePreferences": "Cookie preferences"
+  },
+  "cookie": {
+    "title": "Cookie preferences",
+    "message": "We use cookies to improve your experience and analyze site traffic. You can accept all cookies or only essential ones.",
+    "acceptAll": "Accept all",
+    "essentialOnly": "Essential only"
   },
   "toast": {
     "comingSoon": {

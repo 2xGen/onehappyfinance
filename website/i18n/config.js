@@ -81,6 +81,10 @@ export const localizedSlugPairs = [
     en: '/aw/guides/insurance-aruba-tips-for-new-residents',
     nl: '/aw/guides/verzekering-aruba-tips-voor-nieuwe-inwoners',
   },
+  {
+    en: '/about-us',
+    nl: '/over-ons',
+  },
 ];
 
 // Given a pathname without the locale prefix, translate to the equivalent path in newLocale if known

@@ -11,7 +11,7 @@ import { useLocale } from '@/src/contexts/LocaleContext';
 import { addLocaleToPath } from '@/i18n/config';
 
 const FeaturedGuides = () => {
-  const [ref, isInView] = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.1 });
   const t = useTranslations();
   const { locale } = useLocale();
 
@@ -77,7 +77,7 @@ const FeaturedGuides = () => {
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -92,7 +92,7 @@ const FeaturedGuides = () => {
             <motion.article
               key={index}
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-lg shadow-black/5 overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/10 border border-white/80 hover:border-primary/20"
             >

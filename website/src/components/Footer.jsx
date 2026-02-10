@@ -7,10 +7,12 @@ import Logo from '@/src/components/Logo';
 import { useTranslations } from '@/src/contexts/LocaleContext';
 import { addLocaleToPath } from '@/i18n/config';
 import { useLocale } from '@/src/contexts/LocaleContext';
+import { useCookieConsent } from '@/src/contexts/CookieConsentContext';
 
 const Footer = () => {
   const { locale } = useLocale();
   const t = useTranslations();
+  const { openBanner } = useCookieConsent();
 
   return (
     <footer id="contact" className="bg-gray-800 text-white py-12 relative z-20">
@@ -33,10 +35,17 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="border-t border-gray-700 pt-8 text-center">
+          <div className="border-t border-gray-700 pt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
             <p className="text-gray-400" suppressHydrationWarning>
               © {new Date().getFullYear()} {t('footer.copyright')}
             </p>
+            <button
+              type="button"
+              onClick={openBanner}
+              className="text-gray-400 hover:text-gray-300 text-sm underline underline-offset-2 transition-colors"
+            >
+              {t('footer.cookiePreferences')}
+            </button>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import { Menu, X } from 'lucide-react';
 import Logo from '@/src/components/Logo';
 import { useLocale, useTranslations } from '@/src/contexts/LocaleContext';
 import LanguageSwitcher from '@/src/components/LanguageSwitcher';
-import { addLocaleToPath } from '@/i18n/config';
+import { addLocaleToPath, translatePathLocale } from '@/i18n/config';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,10 +21,12 @@ const Navbar = () => {
   const navItems = [
     { name: t('nav.home'), path: '/' },
     { name: t('nav.guides'), path: '/aw/guides' },
+    { name: t('nav.about'), path: '/about-us' },
   ];
   
   const getLocalizedPath = (path) => {
-    return addLocaleToPath(path, locale);
+    const translatedPath = translatePathLocale(path, locale);
+    return addLocaleToPath(translatedPath, locale);
   };
 
   useEffect(() => {

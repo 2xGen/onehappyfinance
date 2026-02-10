@@ -8,7 +8,7 @@ import { MapPin, Eye, Ban, Gift, Users, BarChart } from 'lucide-react';
 import { useTranslations } from '@/src/contexts/LocaleContext';
 
 const WhyChooseUs = () => {
-  const [ref, isInView] = useInView({ threshold: 0.2 });
+  const { ref, inView } = useInView({ threshold: 0.2 });
   const t = useTranslations();
 
   const reasons = [
@@ -39,12 +39,11 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section ref={ref} className="py-20 md:py-28 bg-gradient-to-br from-primary via-blue-600 to-primary relative-z">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_50%)] pointer-events-none"></div>
+    <section ref={ref} className="py-20 md:py-28 bg-primary relative-z">
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -56,7 +55,7 @@ const WhyChooseUs = () => {
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex items-start gap-4"
             >

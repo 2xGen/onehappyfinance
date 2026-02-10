@@ -2,7 +2,10 @@ export default function sitemap() {
 	const baseUrl = 'https://onehappyfinance.com';
 	const locales = ['en', 'nl'];
 
-	const corePaths = ['/', '/aw/guides'];
+	const corePaths = ['/', '/aw/guides', '/about-us'];
+	const nlPathMap = {
+		'/about-us': '/over-ons',
+	};
 	const guidePaths = [
 		'/aw/guides/how-to-get-a-mortgage-in-aruba',
 		'/aw/guides/can-foreigners-buy-property-in-aruba',
@@ -33,7 +36,8 @@ export default function sitemap() {
 
 	for (const locale of locales) {
 		for (const p of corePaths) {
-			entries.push({ url: `${baseUrl}/${locale}${p === '/' ? '' : p}`, lastModified });
+			const localized = locale === 'nl' && nlPathMap[p] ? nlPathMap[p] : p;
+			entries.push({ url: `${baseUrl}/${locale}${localized === '/' ? '' : localized}`, lastModified });
 		}
 		for (const p of guidePaths) {
 			const localized = locale === 'nl' && nlGuideSlugMap[p] ? nlGuideSlugMap[p] : p;

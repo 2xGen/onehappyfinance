@@ -1,7 +1,9 @@
 import Navbar from '@/src/components/Navbar'
 import Footer from '@/src/components/Footer'
 import { Toaster } from '@/src/components/ui/toaster'
+import CookieBanner from '@/src/components/CookieBanner'
 import { LocaleProvider } from '@/src/contexts/LocaleContext'
+import { CookieConsentProvider } from '@/src/contexts/CookieConsentContext'
 import { locales, defaultLocale } from '@/i18n/config'
 
 export function generateStaticParams() {
@@ -45,12 +47,15 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <LocaleProvider key={locale} initialLocale={locale}>
-      <Navbar />
-      <main className="flex-grow relative-z">
-        {children}
-      </main>
-      <Footer />
-      <Toaster />
+      <CookieConsentProvider>
+        <Navbar />
+        <main className="flex-grow relative-z">
+          {children}
+        </main>
+        <Footer />
+        <CookieBanner />
+        <Toaster />
+      </CookieConsentProvider>
     </LocaleProvider>
   )
 }

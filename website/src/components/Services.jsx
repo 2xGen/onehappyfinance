@@ -7,7 +7,7 @@ import { useInView } from '@/src/hooks/useInView';
 import { Home, Shield, PiggyBank, Plane } from 'lucide-react';
 
 const Services = () => {
-  const [ref, isInView] = useInView({ threshold: 0.1 });
+  const { ref, inView } = useInView({ threshold: 0.1 });
 
   const services = [
     {
@@ -58,7 +58,7 @@ const Services = () => {
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -73,7 +73,7 @@ const Services = () => {
             <motion.article
               key={index}
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg shadow-black/5 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 p-8 border border-white/50 hover:border-primary/20"
             >

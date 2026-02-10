@@ -13,6 +13,8 @@ const nextConfig = {
 			{ source: '/nl/aw/guides/wat-is-een-annuiteitenhypotheek-in-aruba-2025-gids', destination: '/nl/aw/guides/wat-is-een-annuiteitenhypotheek-in-aruba', permanent: true },
 			{ source: '/nl/aw/guides/hoeveel-kun-je-lenen-in-aruba-2025-gids', destination: '/nl/aw/guides/hoeveel-kun-je-lenen-in-aruba', permanent: true },
 			{ source: '/nl/aw/guides/eigendom-vs-erfpacht-in-aruba-2025-gids', destination: '/nl/aw/guides/eigendom-vs-erfpacht-in-aruba', permanent: true },
+			{ source: '/nl/about-us', destination: '/nl/over-ons', permanent: true },
+			{ source: '/en/over-ons', destination: '/en/about-us', permanent: true },
 		];
 	},
 	images: {

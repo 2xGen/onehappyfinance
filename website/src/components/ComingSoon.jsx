@@ -1,18 +1,18 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from '@/hooks/useInView';
+import { useInView } from '@/src/hooks/useInView';
 import { Sparkles } from 'lucide-react';
 
 const ComingSoon = () => {
-  const [ref, isInView] = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ threshold: 0.3 });
 
   return (
     <section ref={ref} className="py-20 md:py-28 bg-white">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7 }}
           className="max-w-3xl mx-auto text-center bg-accent/20 rounded-2xl p-10 md:p-16 border border-accent/30"
         >

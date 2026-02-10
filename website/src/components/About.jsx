@@ -3,7 +3,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useInView } from 'react-intersection-observer';
+import { useInView } from '@/src/hooks/useInView';
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/src/components/ui/button';
 import { useRouter } from 'next/navigation';

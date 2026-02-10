@@ -1,7 +1,8 @@
 {
   "nav": {
     "home": "Home",
-    "guides": "Gidsen"
+    "guides": "Gidsen",
+    "about": "Over ons"
   },
   "hero": {
     "title": "Uw Betrouwbare Gids voor",
@@ -61,7 +62,14 @@
   "footer": {
     "tagline": "Uw betrouwbare bron voor financiële helderheid in Aruba.",
     "disclaimer": "Alleen informatie – wij zijn geen financiële instelling of hypotheekverstrekker. Alle inhoud is alleen voor informatieve doeleinden en vormt geen financieel advies.",
-    "copyright": "OneHappyFinance.com. Alle Rechten Voorbehouden."
+    "copyright": "OneHappyFinance.com. Alle Rechten Voorbehouden.",
+    "cookiePreferences": "Cookievoorkeuren"
+  },
+  "cookie": {
+    "title": "Cookievoorkeuren",
+    "message": "We gebruiken cookies om uw ervaring te verbeteren en het verkeer te analyseren. U kunt alle cookies of alleen noodzakelijke accepteren.",
+    "acceptAll": "Alles accepteren",
+    "essentialOnly": "Alleen noodzakelijk"
   },
   "toast": {
     "comingSoon": {
