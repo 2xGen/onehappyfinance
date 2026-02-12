@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Breadcrumbs from './BreadcrumbsClient'
+import RelatedGuides from '@/src/components/RelatedGuides'
+import { RELATED_KEYS } from '@/src/lib/guideLinks'
 
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20Insurance%20Works%20in%20Aruba.png'
 
@@ -170,6 +172,7 @@ export default function Page({ params }) {
               ))}
             </div>
           </section>
+          <RelatedGuides locale={params?.locale || 'nl'} keys={RELATED_KEYS.insuranceTips} />
         </div>
 
         <aside className="lg:col-span-4">

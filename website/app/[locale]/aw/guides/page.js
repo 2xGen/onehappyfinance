@@ -21,6 +21,22 @@ export default function GuidesPage() {
 
   const allGuides = useMemo(() => [
     {
+      title: locale === 'nl' ? 'Vastgoed kopen in Aruba: Stap-voor-Stap Overzicht (2026 Gids)' : 'Buying Property in Aruba: Step-by-Step Overview (2026 Guide)',
+      excerpt: locale === 'nl' ? 'Van budget en gebied tot notaris en overdracht — een helder overzicht van het aankoopproces.' : 'From budget and location to notary and transfer — a clear overview of the property buying process in Aruba.',
+      category: locale === 'nl' ? 'Vastgoed' : 'Property',
+      link: locale === 'nl' ? '/aw/guides/vastgoed-kopen-in-aruba' : '/aw/guides/buying-property-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/property%20in%20aruba.png',
+      imgAlt: locale === 'nl' ? 'Vastgoed kopen in Aruba' : 'Buying Property in Aruba',
+    },
+    {
+      title: locale === 'nl' ? 'Kosten van het kopen van vastgoed in Aruba (Belastingen, Notaris & Kosten)' : 'Costs of Buying Property in Aruba (Taxes, Notary & Fees)',
+      excerpt: locale === 'nl' ? 'Volledig overzicht van kosten: sluitingskosten 5–8%, overdrachtsbelasting, notariskosten en jaarlijkse lasten.' : 'Full breakdown of closing costs (5–8%), transfer tax, notary fees, and ongoing annual expenses when buying property in Aruba.',
+      category: locale === 'nl' ? 'Vastgoed' : 'Property',
+      link: locale === 'nl' ? '/aw/guides/kosten-van-het-kopen-van-vastgoed-in-aruba' : '/aw/guides/costs-of-buying-property-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/costs%20of%20buyin%20gproperty%20in%20aruba.png',
+      imgAlt: locale === 'nl' ? 'Kosten van het kopen van vastgoed in Aruba' : 'Costs of Buying Property in Aruba',
+    },
+    {
       title: locale === 'nl' ? 'Hypotheek in Aruba: Complete Gids voor Inwoners en Niet-Inwoners' : 'How to Get a Mortgage in Aruba',
       excerpt: locale === 'nl' ? 'Zo krijg je een hypotheek in Aruba — stap voor stap uitgelegd.' : 'Step-by-step guide to getting a mortgage in Aruba for residents and non-residents.',
       category: locale === 'nl' ? 'Hypotheken' : 'Mortgages',
@@ -69,6 +85,38 @@ export default function GuidesPage() {
       imgAlt: locale === 'nl' ? 'Eigendom vs. Erfpacht in Aruba' : 'Freehold vs. Lease Land in Aruba',
     },
     {
+      title: locale === 'nl' ? 'Eigendom vs. Erfpacht in Aruba: Verschillen in Vastgoedeigendom' : 'Eigendom vs. Erfpacht in Aruba: Understanding Property Ownership Differences',
+      excerpt: locale === 'nl' ? 'Vol eigendom vs erfpacht: eigendomsrechten, 60-jaar pacht, jaarlijkse canon en financiering.' : 'Freehold vs long lease land: ownership rights, 60-year lease, annual canon, and financing.',
+      category: locale === 'nl' ? 'Vastgoed' : 'Property',
+      link: locale === 'nl' ? '/aw/guides/vastgoedeigendom-verschillen-aruba' : '/aw/guides/property-ownership-differences-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/eigendom%20vs%20erfpacht.png',
+      imgAlt: locale === 'nl' ? 'Eigendom vs. Erfpacht in Aruba' : 'Eigendom vs. Erfpacht in Aruba',
+    },
+    {
+      title: locale === 'nl' ? 'Gemiddelde huizenprijs in Aruba' : 'Average House Price in Aruba',
+      excerpt: locale === 'nl' ? 'Wat kost een huis op Aruba? Overzicht van prijsbereiken per regio en woninggrootte, prijs per m² en welke factoren de huizenprijzen bepalen.' : 'What does a house cost in Aruba? Clear overview of price ranges by region and size, price per sq ft, and which factors drive the market.',
+      category: locale === 'nl' ? 'Vastgoed' : 'Property',
+      link: locale === 'nl' ? '/aw/guides/gemiddelde-huizenprijs-aruba' : '/aw/guides/average-house-price-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/Average%20House%20Price%20in%20Aruba.png',
+      imgAlt: locale === 'nl' ? 'Gemiddelde huizenprijs in Aruba' : 'Average House Price in Aruba',
+    },
+    {
+      title: locale === 'nl' ? 'Verschillende gebieden in Aruba: Gids naar de buurten van het eiland' : 'Different Areas in Aruba: A Guide to the Island\'s Neighborhoods',
+      excerpt: locale === 'nl' ? 'Van levendige strandwijken tot rustige woonplaatsen — een compleet overzicht van de belangrijkste locaties in Aruba.' : 'From vibrant beachfront districts to quiet residential towns — a complete overview of Aruba\'s main locations and what makes each unique.',
+      category: locale === 'nl' ? 'Vastgoed' : 'Property',
+      link: locale === 'nl' ? '/aw/guides/verschillende-gebieden-in-aruba' : '/aw/guides/different-areas-in-aruba',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/different%20property%20areas%20in%20aruba.png',
+      imgAlt: locale === 'nl' ? 'Verschillende gebieden in Aruba' : 'Different Areas in Aruba',
+    },
+    {
+      title: locale === 'nl' ? 'Kunnen Buitenlanders Vastgoed Kopen in Aruba? Een Praktische Gids' : 'Can Foreigners Buy Property in Aruba? A Practical Guide',
+      excerpt: locale === 'nl' ? 'Wettelijke vereisten, financiering, belastingen en verhuurregels voor internationale kopers. Vastgoed bezitten in Aruba is soepel, veilig en lonend.' : 'Legal requirements, residency, financing, taxes, and rental rules for international buyers. Owning property in Aruba is smooth, safe, and rewarding.',
+      category: locale === 'nl' ? 'Vastgoed' : 'Property',
+      link: locale === 'nl' ? '/aw/guides/vastgoed-kopen-aruba-als-buitenlander-praktische-gids' : '/aw/guides/foreign-buyers-aruba-practical-guide',
+      imgSrc: 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/buying%20property%20in%20aruba%20as%20a%20foreigner.png',
+      imgAlt: locale === 'nl' ? 'Vastgoed kopen in Aruba als buitenlander' : 'Buying Property in Aruba as a Foreigner',
+    },
+    {
       title: locale === 'nl' ? 'Verzekering in Aruba Begrijpen: Gids voor Inwoners en Expats' : 'Understanding Insurance in Aruba: A Simple Guide for Residents and Expats',
       excerpt: locale === 'nl' ? 'Leer de basis van verzekeringen in Aruba—AZV, motor, woning, aansprakelijkheid en bedrijfsdekking.' : 'Learn the basics of insurance in Aruba—AZV health, motor, home, liability, and business coverage.',
       category: locale === 'nl' ? 'Verzekeringen' : 'Insurance',
@@ -98,6 +146,7 @@ export default function GuidesPage() {
     t('guides.categories.all'),
     t('guides.categories.mortgages'),
     t('guides.categories.insurance'),
+    t('guides.categories.property'),
   ], [t]);
 
   const filteredGuides = useMemo(() => {

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Breadcrumbs from './BreadcrumbsClient'
+import RelatedGuides from '@/src/components/RelatedGuides'
+import { RELATED_KEYS } from '@/src/lib/guideLinks'
 
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/What%20Is%20an%20Annuity%20Mortgage%20and%20How%20Does%20It%20Work%20in%20Aruba.png'
 
@@ -194,6 +196,7 @@ export default function Page({ params }) {
               ))}
             </div>
           </section>
+          <RelatedGuides locale={params?.locale || 'en'} keys={RELATED_KEYS.annuityMortgage} />
         </div>
 
         <aside className="lg:col-span-4">

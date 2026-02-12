@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Breadcrumbs from './BreadcrumbsClient'
+import RelatedGuides from '@/src/components/RelatedGuides'
+import { RELATED_KEYS } from '@/src/lib/guideLinks'
 
 const FEATURED_IMAGE = 'https://soaacpusdhyxwucjhhpy.supabase.co/storage/v1/object/public/One%20Happy%20Finance/How%20much%20can%20you%20borrow%20for%20a%20mortgage%20in%20aruba.png'
 
@@ -181,6 +183,7 @@ export default function Page({ params }) {
               ))}
             </div>
           </section>
+          <RelatedGuides locale={params?.locale || 'en'} keys={RELATED_KEYS.howMuchBorrow} />
         </div>
 
         <aside className="lg:col-span-4">

@@ -24,6 +24,7 @@
       "all": "Alles",
       "mortgages": "Hypotheken",
       "insurance": "Verzekeringen",
+      "property": "Vastgoed",
       "financeRetirement": "Financiën & Pensioen"
     },
     "items": {
@@ -110,7 +111,7 @@
       "buyingHouse": {
         "title": "Een Huis Kopen in Aruba als Buitenlander – Wat U Moet Weten",
         "excerpt": "Een complete gids voor eigendomsrechten, juridische processen en financiële overwegingen.",
-        "category": "Eigendom"
+        "category": "Vastgoed"
       },
       "mortgageRates": {
         "title": "Hypotheekrente in Aruba: Wat Verandert er in 2026?",

@@ -70,6 +70,14 @@ export const localizedSlugPairs = [
     nl: '/aw/guides/eigendom-vs-erfpacht-in-aruba',
   },
   {
+    en: '/aw/guides/property-ownership-differences-aruba',
+    nl: '/aw/guides/vastgoedeigendom-verschillen-aruba',
+  },
+  {
+    en: '/aw/guides/average-house-price-in-aruba',
+    nl: '/aw/guides/gemiddelde-huizenprijs-aruba',
+  },
+  {
     en: '/aw/guides/understanding-insurance-in-aruba',
     nl: '/aw/guides/verzekering-in-aruba-begrijpen',
   },
@@ -80,6 +88,14 @@ export const localizedSlugPairs = [
   {
     en: '/aw/guides/insurance-aruba-tips-for-new-residents',
     nl: '/aw/guides/verzekering-aruba-tips-voor-nieuwe-inwoners',
+  },
+  {
+    en: '/aw/guides/buying-property-in-aruba',
+    nl: '/aw/guides/vastgoed-kopen-in-aruba',
+  },
+  {
+    en: '/aw/guides/costs-of-buying-property-in-aruba',
+    nl: '/aw/guides/kosten-van-het-kopen-van-vastgoed-in-aruba',
   },
   {
     en: '/about-us',
@@ -100,5 +116,17 @@ export function translatePathLocale(pathnameWithoutLocale, newLocale) {
     }
   }
   return pathnameWithoutLocale;
+}
+
+const BASE_URL = 'https://onehappyfinance.com';
+
+/** Returns alternate language URLs for a path (without leading locale). Use for alternates.languages in metadata. */
+export function getAlternateLanguages(pathWithoutLocale) {
+  const out = {};
+  for (const loc of locales) {
+    const path = translatePathLocale(pathWithoutLocale, loc);
+    out[loc] = `${BASE_URL}/${loc}${path === '/' ? '' : path}`;
+  }
+  return out;
 }
 
