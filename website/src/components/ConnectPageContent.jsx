@@ -166,6 +166,13 @@ export default function ConnectPageContent({ locale: localeProp }) {
   const inputClass =
     'h-12 w-full rounded-lg border border-input bg-background px-4 py-2 text-base focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2';
 
+  // On mobile, scroll focused input into view after keyboard opens so user can still see the field
+  const scrollInputIntoView = (e) => {
+    setTimeout(() => {
+      e.target.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    }, 400);
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero — title left, image right */}
@@ -292,6 +299,7 @@ export default function ConnectPageContent({ locale: localeProp }) {
                             placeholder={t.fullName}
                             className={inputClass}
                             disabled={loading}
+                            onFocus={scrollInputIntoView}
                           />
                           <Input
                             type="email"
@@ -300,6 +308,7 @@ export default function ConnectPageContent({ locale: localeProp }) {
                             required
                             className={inputClass}
                             disabled={loading}
+                            onFocus={scrollInputIntoView}
                           />
                           <Button
                             type="submit"
@@ -324,6 +333,7 @@ export default function ConnectPageContent({ locale: localeProp }) {
                             placeholder={t.fullName}
                             className={inputClass}
                             disabled={loading}
+                            onFocus={scrollInputIntoView}
                           />
                           <Input
                             type="email"
@@ -332,6 +342,7 @@ export default function ConnectPageContent({ locale: localeProp }) {
                             required
                             className={inputClass}
                             disabled={loading}
+                            onFocus={scrollInputIntoView}
                           />
                           <Input
                             type="text"
@@ -339,6 +350,7 @@ export default function ConnectPageContent({ locale: localeProp }) {
                             placeholder={t.companyName}
                             className={inputClass}
                             disabled={loading}
+                            onFocus={scrollInputIntoView}
                           />
                           <Button
                             type="submit"
