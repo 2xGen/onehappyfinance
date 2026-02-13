@@ -9,32 +9,44 @@ import { addLocaleToPath } from '@/i18n/config';
 import { useLocale } from '@/src/contexts/LocaleContext';
 import { useCookieConsent } from '@/src/contexts/CookieConsentContext';
 
+const FOOTER_PARTNERSHIP_FALLBACK = 'Interested in partnering with us? Reach out at';
+
 const Footer = () => {
   const { locale } = useLocale();
   const t = useTranslations();
   const { openBanner } = useCookieConsent();
+  const partnershipText = t('footer.partnership');
+  const partnershipLabel = partnershipText && partnershipText !== 'footer.partnership' ? partnershipText : FOOTER_PARTNERSHIP_FALLBACK;
 
   return (
     <footer id="contact" className="bg-gray-800 text-white py-12 relative z-20">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8 mb-8">
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
-               <Link href={addLocaleToPath('/', locale)} className="mb-4">
-                 <Logo color="#FFFFFF" />
-               </Link>
-              <p className="text-gray-300 leading-relaxed max-w-xs mx-auto md:mx-0">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 mb-8">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left max-w-xs mx-auto md:mx-0">
+              <Link href={addLocaleToPath('/', locale)} className="mb-4">
+                <Logo color="#FFFFFF" />
+              </Link>
+              <p className="text-gray-300 leading-relaxed mb-3">
                 {t('footer.tagline')}
+              </p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                {partnershipLabel}{' '}
+                <a
+                  href="mailto:connect@onehappyfinance.com"
+                  className="text-gray-300 hover:text-white transition-colors whitespace-nowrap"
+                >
+                  connect@onehappyfinance.com
+                </a>
               </p>
             </div>
 
-            <div className="text-center md:text-right">
-                <p className="text-gray-400 text-sm max-w-sm">
-                    {t('footer.disclaimer')}
-                </p>
+            <div className="text-center md:text-right max-w-sm mx-auto md:mx-0">
+              <p className="text-gray-400 text-sm leading-relaxed">
+                {t('footer.disclaimer')}
+              </p>
             </div>
           </div>
-
           <nav aria-label="Footer" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-gray-300 mb-4">
             <Link href={addLocaleToPath('/aw/guides', locale)} className="hover:text-white transition-colors">
               {t('nav.guides')}

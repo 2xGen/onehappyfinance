@@ -3,14 +3,17 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { addLocaleToPath } from '@/i18n/config';
+import { useLocale } from '@/src/contexts/LocaleContext';
 import { Input } from '@/src/components/ui/input';
 import { Button } from '@/src/components/ui/button';
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogTitle,
   DialogTrigger,
 } from '@/src/components/ui/dialog';
+import { X } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 
 const HERO_IMAGE_URL =
@@ -92,7 +95,9 @@ const content = {
   },
 };
 
-export default function ConnectPageContent({ locale = 'en' }) {
+export default function ConnectPageContent({ locale: localeProp }) {
+  const { locale: contextLocale } = useLocale();
+  const locale = localeProp ?? contextLocale ?? 'en';
   const t = content[locale] || content.en;
   const [open, setOpen] = useState(false);
   const [role, setRole] = useState(null);
@@ -194,7 +199,15 @@ export default function ConnectPageContent({ locale = 'en' }) {
                     {t.ctaButton}
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="max-w-md max-h-[90vh] overflow-y-auto">
+                <DialogContent className="max-w-md">
+                  <div className="sticky top-0 z-10 flex justify-end -mt-2 -mr-2 mb-2">
+                    <DialogClose
+                      aria-label="Close"
+                      className="rounded-full p-2 text-foreground/70 hover:text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+                    >
+                      <X className="w-5 h-5" />
+                    </DialogClose>
+                  </div>
                   <DialogTitle className="sr-only">{t.ctaButton}</DialogTitle>
                   <div className="text-center flex flex-col items-center">
                     <p className="text-base font-semibold text-foreground/90 uppercase tracking-wide mb-3">
@@ -291,7 +304,7 @@ export default function ConnectPageContent({ locale = 'en' }) {
                           <Button
                             type="submit"
                             size="lg"
-                            className="w-full h-12 text-base font-semibold"
+                            className="w-full h-12 text-sm font-semibold"
                             disabled={loading}
                           >
                             {loading ? t.submitting : t.submit}
@@ -330,7 +343,7 @@ export default function ConnectPageContent({ locale = 'en' }) {
                           <Button
                             type="submit"
                             size="lg"
-                            className="w-full h-12 text-base font-semibold"
+                            className="w-full h-12 text-sm font-semibold"
                             disabled={loading}
                           >
                             {loading ? t.submitting : t.submit}

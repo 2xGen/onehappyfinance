@@ -37,8 +37,9 @@ function BreadcrumbSchema({ locale }) {
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 }
 
-export default function ConnectPage({ params }) {
-  const locale = params?.locale || 'en'
+export default async function ConnectPage({ params }) {
+  const resolved = await params
+  const locale = resolved?.locale || 'en'
   return (
     <>
       <BreadcrumbSchema locale={locale} />
