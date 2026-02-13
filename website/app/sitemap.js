@@ -2,7 +2,7 @@ export default function sitemap() {
 	const baseUrl = 'https://onehappyfinance.com';
 	const locales = ['en', 'nl'];
 
-	const corePaths = ['/', '/aw/guides', '/about-us'];
+	const corePaths = ['/', '/aw/guides', '/about-us', '/connect'];
 	const nlPathMap = {
 		'/about-us': '/over-ons',
 	};

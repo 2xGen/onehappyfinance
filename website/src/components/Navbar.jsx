@@ -22,6 +22,7 @@ const Navbar = () => {
     { name: t('nav.home'), path: '/' },
     { name: t('nav.guides'), path: '/aw/guides' },
     { name: t('nav.about'), path: '/about-us' },
+    { name: t('nav.connect'), path: '/connect' },
   ];
   
   const getLocalizedPath = (path) => {
@@ -66,13 +67,16 @@ const Navbar = () => {
             {navItems.map((item) => {
               const localizedPath = getLocalizedPath(item.path);
               const isActive = pathname === localizedPath || pathname.startsWith(localizedPath + '/');
+              const isConnect = item.path === '/connect';
               return (
                 <Link
                   key={item.name}
                   href={localizedPath}
-                  className={`font-semibold text-base transition-colors ${
-                    isActive ? activeLinkColor : linkColor
-                  }`}
+                  className={
+                    isConnect
+                      ? 'font-semibold text-base text-white bg-primary hover:bg-primary/90 px-4 py-2 rounded-lg transition-colors'
+                      : `font-semibold text-base transition-colors ${isActive ? activeLinkColor : linkColor}`
+                  }
                 >
                   {item.name}
                 </Link>
@@ -102,13 +106,16 @@ const Navbar = () => {
             {navItems.map((item) => {
               const localizedPath = getLocalizedPath(item.path);
               const isActive = pathname === localizedPath || pathname.startsWith(localizedPath + '/');
+              const isConnect = item.path === '/connect';
               return (
                 <Link
                   key={item.name}
                   href={localizedPath}
-                  className={`font-semibold text-lg ${
-                    isActive ? 'text-primary' : 'text-foreground/80'
-                  }`}
+                  className={
+                    isConnect
+                      ? 'font-semibold text-lg text-white bg-primary hover:bg-primary/90 px-4 py-2.5 rounded-lg transition-colors text-center'
+                      : `font-semibold text-lg ${isActive ? 'text-primary' : 'text-foreground/80'}`
+                  }
                 >
                   {item.name}
                 </Link>

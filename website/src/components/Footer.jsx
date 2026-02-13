@@ -35,6 +35,17 @@ const Footer = () => {
             </div>
           </div>
 
+          <nav aria-label="Footer" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-gray-300 mb-4">
+            <Link href={addLocaleToPath('/aw/guides', locale)} className="hover:text-white transition-colors">
+              {t('nav.guides')}
+            </Link>
+            <Link href={addLocaleToPath('/about-us', locale)} className="hover:text-white transition-colors">
+              {t('nav.about')}
+            </Link>
+            <Link href={addLocaleToPath('/connect', locale)} className="hover:text-white transition-colors">
+              {t('nav.connect')}
+            </Link>
+          </nav>
           <div className="border-t border-gray-700 pt-8 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
             <p className="text-gray-400" suppressHydrationWarning>
               © {new Date().getFullYear()} {t('footer.copyright')}
