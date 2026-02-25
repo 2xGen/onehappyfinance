@@ -1,3 +1,5 @@
+import GuidePillarLink from '@/src/components/GuidePillarLink';
+
 export const metadata = {
 	openGraph: {
 		images: [
@@ -12,6 +14,11 @@ export const metadata = {
 };
 
 export default function GuidesLayout({ children }) {
-	return children;
+	return (
+		<>
+			{children}
+			<GuidePillarLink />
+		</>
+	);
 }
 

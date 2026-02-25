@@ -7,6 +7,7 @@ import { useTranslations } from '@/src/contexts/LocaleContext';
 import { addLocaleToPath } from '@/i18n/config';
 import { useLocale } from '@/src/contexts/LocaleContext';
 import { useCookieConsent } from '@/src/contexts/CookieConsentContext';
+import { PILLAR_SLUGS, PILLAR_TO_CATEGORY } from '@/src/lib/pillars';
 
 const FOOTER_PARTNERSHIP_FALLBACK = 'Interested in partnering with us? Reach out at';
 
@@ -34,6 +35,11 @@ const Footer = () => {
 
             <div className="text-center sm:text-left flex flex-col gap-2">
               <p className="text-white font-semibold text-sm mb-1">{t('footer.quickLinks')}</p>
+              {(PILLAR_SLUGS[locale] ?? PILLAR_SLUGS.en).map((slug) => (
+                <Link key={slug} href={addLocaleToPath(`/aw/${slug}`, locale)} className="text-gray-400 text-sm hover:text-white transition-colors">
+                  {PILLAR_TO_CATEGORY[locale]?.[slug] ?? PILLAR_TO_CATEGORY.en[slug]}
+                </Link>
+              ))}
               <Link href={addLocaleToPath('/aw/guides', locale)} className="text-gray-400 text-sm hover:text-white transition-colors">
                 {t('nav.guides')}
               </Link>

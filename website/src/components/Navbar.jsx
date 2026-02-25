@@ -10,6 +10,7 @@ import Logo from '@/src/components/Logo';
 import { useLocale, useTranslations } from '@/src/contexts/LocaleContext';
 import LanguageSwitcher from '@/src/components/LanguageSwitcher';
 import { addLocaleToPath, translatePathLocale } from '@/i18n/config';
+import { PILLAR_SLUGS, PILLAR_TO_CATEGORY } from '@/src/lib/pillars';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,15 @@ const Navbar = () => {
   const { locale } = useLocale();
   const t = useTranslations();
 
+  const pillarNavItems = (PILLAR_SLUGS[locale] ?? PILLAR_SLUGS.en).map((slug) => ({
+    name: PILLAR_TO_CATEGORY[locale]?.[slug] ?? PILLAR_TO_CATEGORY.en[slug],
+    path: `/aw/${slug}`,
+  }));
+
   const navItems = [
     { name: t('nav.home'), path: '/' },
+    ...pillarNavItems,
     { name: t('nav.guides'), path: '/aw/guides' },
-    { name: t('nav.about'), path: '/about-us' },
     { name: t('nav.connect'), path: '/connect' },
   ];
   

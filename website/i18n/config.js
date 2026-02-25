@@ -45,6 +45,11 @@ export function addLocaleToPath(pathname, locale) {
 
 // Map corresponding slugs between locales for pages whose slugs differ
 export const localizedSlugPairs = [
+  // Pillar pages: EN and NL use different slugs
+  { en: '/aw/mortgages', nl: '/aw/hypotheken' },
+  { en: '/aw/insurance', nl: '/aw/verzekeringen' },
+  { en: '/aw/property', nl: '/aw/vastgoed' },
+  // Guides
   {
     en: '/aw/guides/how-to-get-a-mortgage-in-aruba',
     nl: '/aw/guides/hypotheek-in-aruba-complete-gids-voor-inwoners-en-niet-inwoners',
@@ -129,4 +134,3 @@ export function getAlternateLanguages(pathWithoutLocale) {
   }
   return out;
 }
-

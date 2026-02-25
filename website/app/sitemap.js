@@ -6,6 +6,12 @@ export default function sitemap() {
 	const nlPathMap = {
 		'/about-us': '/over-ons',
 	};
+	// Pillar pages: EN mortgages, insurance, property; NL hypotheken, verzekeringen, vastgoed
+	const pillarPaths = [
+		{ en: '/aw/mortgages', nl: '/aw/hypotheken' },
+		{ en: '/aw/insurance', nl: '/aw/verzekeringen' },
+		{ en: '/aw/property', nl: '/aw/vastgoed' },
+	];
 	const guidePaths = [
 		'/aw/guides/how-to-get-a-mortgage-in-aruba',
 		'/aw/guides/buying-property-in-aruba',
@@ -50,6 +56,10 @@ export default function sitemap() {
 		for (const p of corePaths) {
 			const localized = locale === 'nl' && nlPathMap[p] ? nlPathMap[p] : p;
 			entries.push({ url: `${baseUrl}/${locale}${localized === '/' ? '' : localized}`, lastModified });
+		}
+		for (const { en: enPath, nl: nlPath } of pillarPaths) {
+			const localized = locale === 'nl' ? nlPath : enPath;
+			entries.push({ url: `${baseUrl}/${locale}${localized}`, lastModified });
 		}
 		for (const p of guidePaths) {
 			const localized = locale === 'nl' && nlGuideSlugMap[p] ? nlGuideSlugMap[p] : p;

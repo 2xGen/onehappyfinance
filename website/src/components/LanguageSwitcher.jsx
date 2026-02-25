@@ -31,8 +31,7 @@ export default function LanguageSwitcher() {
         aria-label="Change language"
       >
         <Globe size={18} />
-        <span className="hidden sm:inline">{localeNames[locale] || locale.toUpperCase()}</span>
-        <span className="sm:hidden">{locale.toUpperCase()}</span>
+        <span>{locale}</span>
       </button>
 
       {isOpen && (
