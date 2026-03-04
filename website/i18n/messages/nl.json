@@ -13,7 +13,31 @@
     "and": "en",
     "inAruba": "in Aruba",
     "subtitle": "Bij OneHappyFinance vereenvoudigen we alles — van hypotheekopties tot verzekeringen en pensioenplanning — zodat u weloverwogen en met vertrouwen beslissingen kunt nemen.",
-    "cta": "Verken Onze Gidsen"
+    "cta": "Verken Onze Gidsen",
+    "ctaConnect": "Neem contact op",
+    "quickLinksLabel": "Snel naar:",
+    "quickLinkGuides": "Verken gidsen",
+    "quickLinkConnect": "Neem contact op"
+  },
+  "home": {
+    "usp1": "Heldere gidsen",
+    "usp2": "100% gericht op Aruba",
+    "usp3": "Geen verkoopdruk",
+    "usp4": "Gratis bronnen",
+    "usp5": "Voor inwoners en expats",
+    "usp6": "Altijd actueel",
+    "servicesTitle": "Wat we bieden",
+    "servicesIntro": "Van hypotheken en vastgoed tot verzekeringen — heldere, lokale informatie voor weloverwogen beslissingen.",
+    "servicesCta": "Verken onze gidsen",
+    "nextStepTitle": "Uw volgende stap in Aruba?",
+    "nextStepIntro": "Maak wanneer u er klaar voor bent verbinding met gecontroleerde professionals voor hypotheek, vastgoed en verzekering.",
+    "nextStepCta": "Neem contact op",
+    "trustBadge1": "Voor Aruba",
+    "trustBadge2": "Gratis te lezen",
+    "trustBadge3": "Helder en transparant",
+    "ctaStripTitle": "Klaar voor de volgende stap?",
+    "ctaStripDescription": "Neem contact op voor persoonlijke begeleiding bij hypotheken, vastgoed en verzekeringen in Aruba.",
+    "ctaStripButton": "Neem contact op"
   },
   "guides": {
     "title": "Onze Financiële Gidsen",
@@ -23,6 +47,7 @@
     "backToAllGuides": "Alle gidsen",
     "readGuidesAbout": "Lees gidsen over",
     "overview": "Overzicht",
+    "keyTopics": "Wat we behandelen",
     "quickInfo": "Belangrijke informatie",
     "faq": "Veelgestelde vragen",
     "viewAllPillarGuides": "Bekijk alle gidsen:",
@@ -94,6 +119,13 @@
       "description": "Onze gedetailleerde gidsen worden gepubliceerd. Kom binnenkort terug voor deskundige inzichten!"
     }
   },
+  "homeCards": {
+    "title": "Gebouwd voor de Financiële Realiteit van Aruba",
+    "paragraph": "Aruba draait op families, kleine bedrijven en eigendomsrecht — maar financiële info is vaak verwarrend. OneHappyFinance maakt het eenvoudig, transparant en lokaal. We geven u duidelijke begeleiding en eerlijke vergelijkingen, zodat u met vertrouwen beslissingen kunt nemen voor uw toekomst op het eiland.",
+    "ctaGuides": "Verken Onze Gidsen",
+    "ctaConnect": "Neem contact op",
+    "quickLinksTitle": "Snelle links"
+  },
   "about": {
     "title": "Gebouwd voor de Financiële Realiteit van Aruba",
     "paragraph1": "De economie van Aruba draait op sterke families, kleine bedrijven en eigendomsrecht. Maar financiële informatie kan ingewikkeld zijn — banken en makelaars gebruiken vaak verwarrend jargon.",
@@ -109,7 +141,7 @@
     "cta": "Verken Onze Gidsen"
   },
   "whyChooseUs": {
-    "title": "Waarom Ons Kiezen?",
+    "title": "Waar We Voor Staan",
     "reasons": {
       "focused": "100% gericht op Aruba en het Caribisch gebied",
       "transparent": "Transparante, gemakkelijk te lezen financiële informatie",
@@ -122,6 +154,7 @@
   "featuredGuides": {
     "title": "Uitgelichte Gidsen",
     "subtitle": "Onze nieuwste artikelen om u te helpen navigeren door het financiële landschap van Aruba.",
+    "viewAll": "Bekijk alle gidsen",
     "readMore": "Lees Meer",
     "guides": {
       "buyingHouse": {

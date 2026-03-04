@@ -26,6 +26,8 @@ module.exports = {
           DEFAULT: '#0070BA',
           foreground: 'hsl(var(--primary-foreground))',
           hover: '#005A96',
+          light: '#5BA3D4',
+          lighter: '#E8F4FC',
         },
         secondary: {
           DEFAULT: '#00B3A4',

@@ -13,7 +13,31 @@
     "and": "and",
     "inAruba": "in Aruba",
     "subtitle": "At OneHappyFinance, we simplify everything — from mortgage options to insurance and pension planning — so you can make confident, informed decisions.",
-    "cta": "Explore Our Guides"
+    "cta": "Explore Our Guides",
+    "ctaConnect": "Connect with us",
+    "quickLinksLabel": "Quick links:",
+    "quickLinkGuides": "Explore guides",
+    "quickLinkConnect": "Connect with us"
+  },
+  "home": {
+    "usp1": "Clear guides",
+    "usp2": "100% Aruba-focused",
+    "usp3": "No sales pressure",
+    "usp4": "Free resources",
+    "usp5": "For residents & expats",
+    "usp6": "Always up to date",
+    "servicesTitle": "What we offer",
+    "servicesIntro": "From mortgages and property to insurance — clear, local information so you can make confident decisions.",
+    "servicesCta": "Explore our guides",
+    "nextStepTitle": "Considering your next step?",
+    "nextStepIntro": "Connect with vetted mortgage, property, and insurance professionals when you're ready. We're here to help.",
+    "nextStepCta": "Connect with us",
+    "trustBadge1": "For Aruba",
+    "trustBadge2": "Free to read",
+    "trustBadge3": "Clear & transparent",
+    "ctaStripTitle": "Ready to take the next step?",
+    "ctaStripDescription": "Connect with us for personalized guidance on mortgages, property, and insurance in Aruba.",
+    "ctaStripButton": "Connect with us"
   },
   "guides": {
     "title": "Our Financial Guides",
@@ -23,6 +47,7 @@
     "backToAllGuides": "All guides",
     "readGuidesAbout": "Read guides about",
     "overview": "Overview",
+    "keyTopics": "What we cover",
     "quickInfo": "Key information",
     "faq": "Frequently asked questions",
     "viewAllPillarGuides": "View all guides:",
@@ -94,6 +119,13 @@
       "description": "Our detailed guides are being published. Check back soon for expert insights!"
     }
   },
+  "homeCards": {
+    "title": "Built for Aruba's Financial Reality",
+    "paragraph": "Aruba runs on families, small businesses, and home ownership — but financial info is often confusing. OneHappyFinance makes it simple, transparent, and local. We give you clear guidance and honest comparisons so you can make confident decisions for your future on the island.",
+    "ctaGuides": "Explore Our Guides",
+    "ctaConnect": "Connect with us",
+    "quickLinksTitle": "Quick links"
+  },
   "about": {
     "title": "Built for Aruba's Financial Reality",
     "paragraph1": "Aruba's economy runs on strong families, small businesses, and home ownership. But financial information can be complicated — banks and brokers often use confusing jargon.",
@@ -109,7 +141,7 @@
     "cta": "Explore Our Guides"
   },
   "whyChooseUs": {
-    "title": "Why Choose Us?",
+    "title": "What We Stand For",
     "reasons": {
       "focused": "100% focused on Aruba and the Caribbean",
       "transparent": "Transparent, easy-to-read financial information",
@@ -122,6 +154,7 @@
   "featuredGuides": {
     "title": "Featured Guides",
     "subtitle": "Our latest articles to help you navigate Aruba's financial landscape.",
+    "viewAll": "View all guides",
     "readMore": "Read More",
     "guides": {
       "buyingHouse": {

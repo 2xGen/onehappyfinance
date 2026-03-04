@@ -39,6 +39,10 @@ export const PILLAR_OVERVIEW_SECTIONS = {
         title: 'Rental and use',
         content: 'If you plan to rent out your property, local rules and any HOA or lease conditions apply. Short-term rental regulations may differ from long-term. Tax implications for rental income also apply. Our guides and a local advisor can help you align with current rules.',
       },
+      {
+        title: 'Notary and registration',
+        content: 'A civil-law notary in Aruba handles the deed and transfer. They check the title, run due diligence, and register the sale with the Kadaster. Choosing a licensed notary ensures a legally sound purchase. Our guides explain what to expect and which documents to prepare.',
+      },
     ],
     mortgages: [
       {
@@ -65,6 +69,18 @@ export const PILLAR_OVERVIEW_SECTIONS = {
         title: 'From application to disbursement',
         content: 'The process usually involves application, submission of documents, property valuation, and approval. Once the notary has completed the deed and registration (including with the Kadaster where relevant), the bank disburses the loan. Timelines vary; your notary and bank can give a typical schedule.',
       },
+      {
+        title: 'Interest rates and conditions',
+        content: 'Rates and terms vary by bank and borrower. Fixed and variable options exist; annuity structures are common. Our guides help you compare and understand what affects your rate and monthly payment.',
+      },
+      {
+        title: 'Property valuation',
+        content: 'Banks typically require a valuation before approving a mortgage. The valuer assesses the property and the report supports the loan amount. Your notary and bank can recommend licensed valuers in Aruba.',
+      },
+      {
+        title: 'Notary and payout',
+        content: 'After approval, the notary prepares the deed and registers the mortgage. Once registration is complete, the bank disburses the loan. Your notary coordinates with the bank and seller on timing and transfer.',
+      },
     ],
     insurance: [
       {
@@ -86,6 +102,22 @@ export const PILLAR_OVERVIEW_SECTIONS = {
       {
         title: 'Health and car in practice',
         content: 'AZV covers essential medical care. For gaps or extra comfort, supplementary health insurance exists. For cars, WA is the minimum; comprehensive and other add-ons are available. Our guides go into detail on both.',
+      },
+      {
+        title: 'Making a claim',
+        content: 'Each insurer has a claims process for health, car, or home. Report incidents promptly and keep documentation. Brokers can help you navigate claims and follow-up with the insurer.',
+      },
+      {
+        title: 'Switching or renewing',
+        content: 'You can switch insurers or adjust coverage at renewal. Compare options and check cancellation rules. Our guides outline what to consider when changing or renewing your policies.',
+      },
+      {
+        title: 'Family and dependants',
+        content: 'AZV and other policies can cover dependants. Rules differ per product. When you move or add family members, update your coverage with your broker or insurer.',
+      },
+      {
+        title: 'Business and professional cover',
+        content: 'If you run a business in Aruba, professional liability or business insurance may be relevant. Brokers can advise on what is required or recommended for your activity.',
       },
     ],
   },
@@ -123,6 +155,10 @@ export const PILLAR_OVERVIEW_SECTIONS = {
         title: 'Verhuur en gebruik',
         content: 'Bij verhuur gelden lokale regels en eventuele VvE- of erfpachtvoorwaarden. Regels voor kort verhuur kunnen afwijken van lang verhuur. Ook fiscale gevolgen van huurinkomsten zijn van toepassing. Onze gidsen en een lokale adviseur kunnen u helpen actueel te blijven.',
       },
+      {
+        title: 'Notaris en inschrijving',
+        content: 'Een notaris in Aruba verzorgt de akte en overdracht. Zij controleren de titel, voeren due diligence uit en schrijven de verkoop in bij het Kadaster. Een bevoegde notaris zorgt voor een rechtsgeldige aankoop. Onze gidsen leggen uit wat u kunt verwachten en welke documenten u nodig heeft.',
+      },
     ],
     hypotheken: [
       {
@@ -149,6 +185,18 @@ export const PILLAR_OVERVIEW_SECTIONS = {
         title: 'Van aanvraag tot uitbetaling',
         content: 'Het proces omvat meestal aanvraag, indienen van documenten, taxatie en goedkeuring. Na de notariële akte en inschrijving (waar relevant bij het Kadaster) volgt uitbetaling door de bank. De doorlooptijd varieert; uw notaris en bank kunnen een indicatie geven.',
       },
+      {
+        title: 'Rente en voorwaarden',
+        content: 'Rentes en voorwaarden verschillen per bank en aanvrager. Vaste en variabele opties bestaan; annuïteiten zijn gebruikelijk. Onze gidsen helpen u vergelijken en begrijpen wat uw rente en maandlast beïnvloedt.',
+      },
+      {
+        title: 'Taxatie van de woning',
+        content: 'Banken vragen doorgaans een taxatie vóór goedkeuring. De taxateur beoordeelt de woning en het rapport ondersteunt het leenbedrag. Uw notaris en bank kunnen erkende taxateurs op Aruba aanbevelen.',
+      },
+      {
+        title: 'Notaris en uitbetaling',
+        content: 'Na goedkeuring stelt de notaris de akte op en schrijft de hypotheek in. Na inschrijving betaalt de bank uit. Uw notaris stemt het tijdstip en de overdracht af met de bank en verkoper.',
+      },
     ],
     verzekeringen: [
       {
@@ -170,6 +218,22 @@ export const PILLAR_OVERVIEW_SECTIONS = {
       {
         title: 'Zorg en auto in de praktijk',
         content: 'AZV dekt essentiële medische zorg. Voor aanvulling of extra comfort bestaat aanvullende zorgverzekering. Voor de auto is WA het minimum; allrisk en andere uitbreidingen zijn beschikbaar. Onze gidsen gaan hier dieper op in.',
+      },
+      {
+        title: 'Schade melden',
+        content: 'Elke verzekeraar heeft een schadeprocedure voor zorg, auto of woning. Meld incidenten tijdig en bewaar documentatie. Tussenpersonen kunnen u helpen bij het indienen en opvolgen van claims.',
+      },
+      {
+        title: 'Overstappen of verlengen',
+        content: 'U kunt bij verlenging van verzekering overstappen of uw dekking aanpassen. Vergelijk opties en let op opzegvoorwaarden. Onze gidsen beschrijven waar u op moet letten bij wijziging of verlenging.',
+      },
+      {
+        title: 'Gezin en meeverzekerden',
+        content: 'AZV en andere polissen kunnen meeverzekerden dekken. De regels verschillen per product. Bij verhuizing of uitbreiding van het gezin uw dekking bijwerken bij uw tussenpersoon of verzekeraar.',
+      },
+      {
+        title: 'Zakelijke en professionele dekking',
+        content: 'Als u een onderneming heeft in Aruba kunnen beroepsaansprakelijkheid of bedrijfsverzekering relevant zijn. Tussenpersonen kunnen adviseren wat verplicht of aanbevolen is voor uw activiteit.',
       },
     ],
   },

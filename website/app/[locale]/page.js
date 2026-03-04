@@ -1,8 +1,10 @@
 import Hero from '@/src/components/Hero'
-import About from '@/src/components/About'
-import OurApproach from '@/src/components/OurApproach'
+import HomeUsps from '@/src/components/HomeUsps'
+import HomeCards from '@/src/components/HomeCards'
+import HomeTrustBadges from '@/src/components/HomeTrustBadges'
 import FeaturedGuides from '@/src/components/FeaturedGuides'
 import WhyChooseUs from '@/src/components/WhyChooseUs'
+import HomeCtaStrip from '@/src/components/HomeCtaStrip'
 
 export const metadata = {
   openGraph: {
@@ -21,12 +23,12 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <div className="space-y-16 md:space-y-0">
-        <About />
-        <OurApproach />
-      </div>
+      <HomeUsps />
+      <HomeCards />
+      <HomeTrustBadges />
       <FeaturedGuides />
       <WhyChooseUs />
+      <HomeCtaStrip />
     </>
   )
 }

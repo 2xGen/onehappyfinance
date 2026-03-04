@@ -123,9 +123,7 @@ export function translatePathLocale(pathnameWithoutLocale, newLocale) {
   return pathnameWithoutLocale;
 }
 
-const BASE_URL = 'https://onehappyfinance.com';
-
-/** Returns alternate language URLs for a path (without leading locale). Use for alternates.languages in metadata. */
+const BASE_URL = 'https://onehappyfinance.com';/** Returns alternate language URLs for a path (without leading locale). Use for alternates.languages in metadata. */
 export function getAlternateLanguages(pathWithoutLocale) {
   const out = {};
   for (const loc of locales) {
